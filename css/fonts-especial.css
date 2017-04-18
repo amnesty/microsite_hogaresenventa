@@ -1,0 +1,121 @@
+/*
+Theme Name: StoryofGod2017
+Theme URI: http://storyofgod.natgettv.com/
+Author: Estresarte Comunicación S.L.
+Author URI: http://www.estresarte.com
+Description: StoryofGod desarrollado por estrés
+Version: 2.0
+Tags: estres, StoryofGod
+Text Domain: StoryofGod2017
+*/
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav.menu .box-menu ul li{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.tooltip {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.modal-body .box-text h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.close {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+/* Boton general */
+.btn-general{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#cookie_action_close_header{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal!important;
+    font-size: 20px;
+}
+
+.botons-seasons ul li a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    left: auto;
+}
+/*--------------------------------------
+  ---------------------------------------*/
+
+/* Módulo Home */
+.modulo-home .box-text h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: auto;
+}
+
+.modulo-home .box-text h2.subtitle{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: auto;
+}
+
+.modulo-home .box-text p.second{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: auto;
+}
+
+.modulo-home .box-text .box-date p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: auto;
+}
+
+
+/* Módulo chapters  */
+.modulo-chapters .chapters-desktop .box-chapters ul li .box-text h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: auto;
+
+}
+
+.modulo-chapters .chapters-desktop .box-chapters ul li .box-text p{
+    letter-spacing: auto;
+}
+
+.chapters-mobile .panel-heading a .box-title-mobile h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: auto;
+    text-transform: uppercase;
+}
+
+footer {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.box-left ul li a {
+    font-weight: normal;
+    letter-spacing: auto;
+}
+
+footer .rrss ul li:first-child {
+    font-size: 12px;
+    line-height: 35px;
+    letter-spacing: auto;
+}
