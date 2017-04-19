@@ -268,13 +268,16 @@ if($_GET['error_form'] == 1){
 
 
 	<!-- Footer -->
-    <?php include "includes/footer.php";?>
+    <?php 
+	    $no_incluir_piwik = true;
+	    include "includes/footer.php";
+    ?>
 
     <!-- cookies  -->
     <?php include "includes/cookies.php";?>
 
     <!-- pixel google  -->
-    <?php //include ("includes/pixelret.php"); ?>
+    <?php include ("includes/pixelret.php"); ?>
 
 </body>
 </html>
