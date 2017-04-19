@@ -62,7 +62,7 @@ $(document).ready(function() {
 
         $('.ancla-firma .content-text form').animate({opacity: 0.2}, 800);
 
-        if(isMobile) {            
+        if(isMobile) {
             if($('.ancla-firma').hasClass('modulo-interior')) {
                 $('html, body').animate({scrollTop: $('.ancla-firma .formulario-general').offset().top - headerHeight +1}, 600, function(){
                     $('.ancla-firma .content-text form').animate({opacity: 1}, 800);
@@ -254,7 +254,7 @@ function soloNumeros(e) {
 }
 
 function ocultarTel(valor) {
-    if(valor == '1198') {
+    if(valor == '192') {
         $('input[name=telefono]').removeAttr('disabled');
         $('input[name=telefono]').removeAttr('readonly');
     }else {
