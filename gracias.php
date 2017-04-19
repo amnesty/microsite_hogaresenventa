@@ -102,18 +102,19 @@ if($isMobile) {
 //Tienen activa la cookie de aceptar cookies: cookieAlert3 = "1"
 if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
 
-    //VIENE DE GOOGLE anuncios nuestros
-    if($_SESSION['pk_campaign'] == 'anunggl_antevenio' || $_SESSION['utm_campaign'] == 'anunggl_antevenio') {
+    //VIENE DE GOOGLE anuncios DISPLAY
+    if($_SESSION['pk_campaign'] == 'anunggl_display' || $_SESSION['utm_campaign'] == 'anunggl_display') {
 ?>
 
-<!-- Google Code for Lead Navidad Conversion Page -->
+<!-- Instrucciones- Pixel_firmas.txt -->
+<!-- Google Code for Pixel_firmas Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
-var google_conversion_id = 872786314;
+var google_conversion_id = 966452768;
 var google_conversion_language = "en";
 var google_conversion_format = "3";
 var google_conversion_color = "ffffff";
-var google_conversion_label = "5_A3CLD6vWwQitOWoAM";
+var google_conversion_label = "gEVDCNmMmWwQoMzrzAM";
 var google_remarketing_only = false;
 /* ]]> */
 </script>
@@ -121,32 +122,36 @@ var google_remarketing_only = false;
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/872786314/?label=5_A3CLD6vWwQitOWoAM&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/966452768/?label=gEVDCNmMmWwQoMzrzAM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
-
 
 <?php
     }
 
-    //VIENE DE FACEBOOK
-    if($_SESSION['pk_campaign'] == 'anunfbk' || $_SESSION['utm_campaign'] == 'anunfbk') {
+    //VIENE DE GOOGLE anuncios GRANT
+    if($_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl') {
 ?>
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1076898019072470');
-    fbq('track', "PageView");
-    fbq('track', 'Lead');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1076898019072470&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+<!-- Instrucciones- pixel_firmas_grant.txt -->
+<!-- Google Code for pixel_firmas_grant Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 973137582;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "lfA3CIPcvnAQrs2D0AM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/973137582/?label=lfA3CIPcvnAQrs2D0AM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
 <?php
     }
 }
@@ -154,7 +159,7 @@ var google_remarketing_only = false;
 
 </head>
 <body class="gracias">
-	
+
 	<header class="clearfix">
 		<div class="left">
 			<a href="<?php echo URL_SITE ?>"><img src="images/logo-2x.png" alt="Amnistía Internacional"></a>
@@ -207,13 +212,17 @@ if($_GET['error_form'] == 1){
 } else {
 ?>
 							<h2>Gracias por tu firma</h2>
-							<p>Muchas gracias por luchar para que se respete el derecho a una vivienda digna de cientos de familias.</p>
 							<p>Si todavía quieres ayudar más tienes estás dos opciones a tu disposición.</p>
-							<p>Haciendo un donativo recibirás este cartel para que lo cuelgues en tu balcón o ventana. Así podrás difundir el mensaje de la campaña y mostrar tu apoyo a las familias cuyo derecho a la vivienda se vendió.</p>
+							<p>Haciendo un donativo <b>recibirás este cartel para que lo cuelgues en tu balcón o ventana.</b> Así podrás difundir el mensaje de la campaña y <b>mostrar tu apoyo a las familias</b> cuyo derecho a la vivienda se vendió.</p>
 							<a data-e_c="Gracias" data-e_a="click" data-e_l="Haz un donativo" target="_blank" class="btn-big-haz-un-donativo orange-white send-piwik-event" href="<?php echo URL_DONA; ?>"><b>Haz un donativo</b></a>
+<?php
+	if($_GET['s'] != 1) {
+?>
 							<p>O si lo deseas, puede <b>hacerte socio/a de Amnistía Internacional y defender este y otros muchos derechos</b> que se vulneran en el mundo.</p>
 							<a data-e_c="Gracias" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-big-hazte-socio white-orange send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a>
+
 <?php
+	}
 }
 ?>
 						</div>
@@ -234,7 +243,7 @@ if($_GET['error_form'] == 1){
 	  _paq.push(["setDomains", ["*.es.amnesty.org",]]);
 	  _paq.push(['trackPageView']);
 	  _paq.push(['enableLinkTracking']);
-	  _paq.push(['trackGoal', 45]);
+	  _paq.push(['trackGoal', 51]);
 		_paq.push(["trackGoal", 6]);
 		_paq.push(["trackGoal", 33]);
 		if (nuevoFirmante==2) {

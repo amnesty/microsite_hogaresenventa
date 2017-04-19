@@ -107,13 +107,13 @@ if($isMobile) {
 			<div class="rrss"><!--redes header-->
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
-					<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo URL_SITE . TRACK_TW_UTM; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-					<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'lucia' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ')?>"></a></li>-->
+                	<!--<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ' . SL_LUCIA_WH )?>"></a></li>-->
 <?php
 }
 ?>
@@ -133,29 +133,29 @@ if($isMobile) {
 
 		<div class="container">
 			<div class="row">
-				<div class="content-fixed col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+				<div class="content-fixed col-xs-12 col-sm-12 col-md-4 col-lg-4" >	
 					<div class="imagen">
 						<img src="images/modulo-2-su-derecho.jpg" alt="">
 					</div>
 				</div>
 
-				<div class="content-text col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="content-text col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="row">
 						<div class="col-12">
 
 							<h1>Su derecho #NoSeVende</h1>
-							<p>Elena y sus tres hijos vivían en una vivienda social hasta que el ayuntamiento de Madrid la vendió a un fondo de inversión, sin contar con ella e incumpliendo la ley. Elena tiene derecho a una vivienda digna.</p>
-								
+							<p>Lucía y su hija de 7 años viven en una vivienda social desde 2012. Un día escuchó por el barrio que la Comunidad de Madrid había vendido su casa a un fondo de inversión. Los rumores eran ciertos. La reducción del alquiler que le concedieron por su incapacidad total se esfumó porque su vivienda ya no era pública.</p>
+							<p>Lucía y su hija podrían quedarse en la calle.<p>								
 
 							<ul class="clearfix">
 								<li><b>Comparte:</b></li><!--redes caso interior-->
-								<li><a data-e_c="Lucía - Caso" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo URL_SITE . 'lucia' . TRACK_TW_UTM; ?>" data-texto="" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+								<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-								<li><a data-e_c="Lucía - Caso" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'lucia' . TRACK_FB_UTM; ?>" data-title="" data-texto="" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+								<li><a data-e_c="Lucía - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'lucia' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                				<!--<li><a data-e_c="Lucía - Caso" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . 'lucia' . TRACK_WH_UTM ; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('')?>"></a></li>-->
+                				<!--<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_LUCIA_WH)?>"></a></li>-->
 <?php
 }
 ?>
@@ -163,7 +163,7 @@ if($isMobile) {
 
 							<div class="formulario-general">
 								<h1>El Derecho a la vivienda #NoSeVende</h1>
-								<p>Firma <a data-e_c="Lucía - Caso" data-e_a="click" data-e_l="Petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la  Comunidad de Madrid para que den una alternativa a las familias vendidas.</p>
+								<p>Firma <a data-e_c="Lucía - Caso" data-e_a="click" data-e_l="Petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 
 								<?php include ('includes/form-firma.php') ?>
 							</div>

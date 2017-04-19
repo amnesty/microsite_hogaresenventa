@@ -574,6 +574,7 @@ form .form-check-input {
 
 form .form-check{
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 form .btn-enviar{
@@ -595,6 +596,14 @@ form .btn-enviar{
     min-height: 768px;
 }
 
+.modulo-interior .content-text .col-12{
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding: 0 20px;
+}
+
 .modulo-interior .container,
 .modulo-interior .row{
     height: 100%;
@@ -604,7 +613,7 @@ form .btn-enviar{
     position: fixed;
     overflow: hidden;
     height: 100%;
-    width: 50%;
+    width: 33.333333%;
 }
 
 .modulo-interior .content-fixed .imagen img  {
@@ -640,17 +649,18 @@ form .btn-enviar{
 }
 
 .modulo-interior .content-text {
-    padding: 150px 0 40px;
+    padding: 100px 0 40px;
 }
 
 .modulo-interior .content-text .formulario-general{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .modulo-interior .content-text ul{
     padding: 0;
     margin: 0;
     float: right;
+    display: none;
 }
 
 .modulo-interior .content-text ul li{
@@ -681,6 +691,10 @@ form .btn-enviar{
 
 .modulo-interior .content-text ul li a:hover {
     color: #eb6400;
+}
+
+.modulo-interior .formulario-general form {
+    max-width: 380px;
 }
 
 /* MODULO-GRACIAS */
@@ -866,6 +880,12 @@ footer .links li{
     }
     .interior header .right ul li {
         margin-right: 0;
+    }
+    .modulo-interior .content-text ul{
+        display: block;
+    }
+    .modulo-interior .content-text .formulario-general{
+        margin-top: 80px;
     }
 
     /*

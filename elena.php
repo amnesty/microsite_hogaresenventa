@@ -125,13 +125,13 @@ if($isMobile) {
 			<div class="rrss">
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li><!--redes header-->
-					<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo URL_SITE . TRACK_TW_UTM; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_ELENA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-					<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ')?>"></a></li>-->
+                	<!--<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_ELENA_WH)?>"></a></li>-->
 <?php
 }
 ?>
@@ -151,7 +151,7 @@ if($isMobile) {
 
 		<div class="container">
 			<div class="row">
-				<div class="content-fixed col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+				<div class="content-fixed col-xs-12 col-sm-12 col-md-4 col-lg-4" >
 					<div class="imagen">
 
 						<img src="images/elena.jpg" alt="Elena">
@@ -166,23 +166,28 @@ if($isMobile) {
 					</div>
 				</div>
 
-				<div class="content-text col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="content-text col-xs-12 col-sm-12 col-md-8 col-lg-8">
 					<div class="row">
 						<div class="col-12">
 
 							<h1>Su derecho #NoSeVende</h1>
-							<p>Elena y sus tres hijos vivían en una vivienda social hasta que el ayuntamiento de Madrid la vendió a un fondo de inversión, sin contar con ella e incumpliendo la ley. Elena tiene derecho a una vivienda digna.</p>
-
+							<!--<p>Elena y sus tres hijos vivían en una vivienda social hasta que el ayuntamiento de Madrid la vendió a un fondo de inversión, sin contar con ella e incumpliendo la ley. Elena tiene derecho a una vivienda digna.</p>-->
+							<p>La clínica se ofreció a organizar el entierro y, muchos años después, Flor descubrió que el bebé no estaba enterrado donde aseguraba la clínica, y su cuerpo nunca apareció.</p>
+							<p>¿Dónde está entonces el hermano de Flor?
+							Flor lucha para que se sepa la verdad y se haga justicia. Ante la sospecha de que su hermano pudo ser robado al nacer, Flor puso una denuncia en España, de la que no ha tenido respuesta , y también sumó su caso a la querella argentina.
+							En 2013, la juez argentina María Servini pidió interrogar al ginecólogo Abelardo García por su posible relación con el presunto robo del hermano de Flor. Pero el gobierno español está bloqueando la investigación.
+							El caso de Flor no es único. Miles de niños y niñas podrían haber sido objeto de secuestro, tráfico de menores y adopciones ilegales durante la guerra civil y el franquismo.
+							Nunca volvieron a casa. Lo único que sus familias piden es justicia.</p>
 
 							<ul class="clearfix">
 								<li><b>Comparte:</b></li><!--redes caso interior-->
-								<li><a data-e_c="Elena - Caso" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_TW_UTM; ?>" data-texto="" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+								<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_ELENA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-								<li><a data-e_c="Elena - Caso" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="" data-texto="" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-elena.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+								<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                				<!--<li><a data-e_c="Elena - Caso" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . 'elena' . TRACK_WH_UTM ; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('')?>"></a></li>-->
+                				<!--<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_ELENA_WH)?>"></a></li>-->
 <?php
 }
 ?>
@@ -190,7 +195,7 @@ if($isMobile) {
 
 							<div class="formulario-general">
 								<h1>El Derecho a la vivienda #NoSeVende</h1>
-								<p>Firma <a data-e_c="Elena - Caso" data-e_a="click" data-e_l="Petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la  Comunidad de Madrid para que den una alternativa a las familias vendidas.</p>
+								<p>Firma <a data-e_c="Elena - Caso" data-e_a="click" data-e_l="Petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 
 								<?php include ('includes/form-firma.php') ?>
 							</div>

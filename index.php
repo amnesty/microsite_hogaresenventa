@@ -127,13 +127,13 @@ if($isMobile) {
 			<div class="rrss">
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
-					<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo URL_SITE . TRACK_TW_UTM; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_HOME_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
 					<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ')?>"></a></li>-->
+                	<!--<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_HOME_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ' . SL_HOME_WH)?>"></a></li>-->
 <?php
 }
 ?>
@@ -154,14 +154,14 @@ if($isMobile) {
 		<div class="container">
 			<div class="row">
 				<div class="content-img col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<img src="images/modulo-1-firma.jpg" alt="En 2012 y 2013, el Ayuntamiento y la Comunidad de Madrid vendieron casi 5.000 viviendas sociales con personas dentro a fondos de inversión. Las autoridades prometieron que todo seguiría igual. Pero no fue así. Algunas familias han perdido sus viviendas y otras están a punto de perderlas. Están desprotegidas y las autoridades les dan la espalda porque sus viviendas ya no son públicas. ¿Dónde ha quedado su derecho a una vivienda digna? Exige a nuestro lado que lo recuperen.">
+					<img src="images/modulo-1-firma.jpg" alt="En 2012 y 2013, el Ayuntamiento y la Comunidad de Madrid vendieron casi 5.000 viviendas sociales a fondos de inversión, sin contar con las personas que vivían en ellas. Prometieron que todo seguiría igual, pero desde entonces algunas familias han perdido sus viviendas y otras están a punto de perderlas porque no pueden hacer frente a las nuevas condiciones. Mientras, las autoridades se han desentendido del problema.">
 				</div>
 
 				<div class="content-text col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>El Derecho a la vivienda #NoSeVende</h1>
-							<p>Firma <a data-e_c="Home - Petición" data-e_a="click" data-e_l="Petición" href="#" class="send-piwik-event" title="Firma esta petición" data-toggle="modal" data-target="#modal-peticion"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que cumplan con sus obligaciones y protejan a las personas afectadas.</p>
+							<p>Firma <a data-e_c="Home - Petición" data-e_a="click" data-e_l="Petición" href="#" class="send-piwik-event" title="Firma esta petición" data-toggle="modal" data-target="#modal-peticion"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 
 							<?php include ('includes/form-firma.php') ?>
 						</div>
@@ -179,13 +179,13 @@ if($isMobile) {
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>Su derecho #NoSeVende</h1>
-							<p>Elena y sus tres hijos vivían en una vivienda social hasta que la Comunidad de Madrid  la vendió a un fondo de inversión sin contar con ella. Cuando pidió ayuda a las autoridades, le dieron la espalda. Le dijeron que su casa ya no era una vivienda social. <br/>Y ahora, la ha perdido.<p>
+							<p>Elena y sus tres hijos vivían en una vivienda social hasta que la Comunidad de Madrid la vendió a un fondo de inversión sin contar con ella. Cuando pidió ayuda, las autoridades se desentendieron porque la vivienda había dejado de ser pública. <br/>Finalmente, acabó perdiendo su vivienda.<p>
 							<p>Elena tiene derecho a una vivienda digna.</p>
 							<div class="botones">
 								<a class="btn-big-general orange-white" href="elena"><b>Firma por Elena</b></a>
 							</div>
 							<br/>
-							<p>Lucía y su hija de 7 años viven en una vivienda social desde 2012. Un día escuchó por el barrio que la Comunidad de Madrid había vendido su casa a un fondo de inversión. Los rumores eran ciertos. La reducción del alquiler que le concedieron por su incapacidad total se esfumó porque su vivienda ya no era social.</p>
+							<p>Lucía y su hija de 7 años viven en una vivienda social desde 2012. Un día escuchó por el barrio que la Comunidad de Madrid había vendido su casa a un fondo de inversión. Los rumores eran ciertos. La reducción del alquiler que le concedieron por su incapacidad total se esfumó porque su vivienda ya no era pública.</p>
 							<p>Lucía y su hija podrían quedarse en la calle.<p>
 							<div class="botones">
 								<a class="btn-big-general white-orange" href="lucia"><b>Firma por Lucía</b></a>
