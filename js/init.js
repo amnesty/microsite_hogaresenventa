@@ -286,7 +286,7 @@ function crearCookie(name,value,days,domain) {
         var expires = "; expires="+date.toGMTString();
     }
     else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/;domain="+domain;
+    document.cookie = name+"="+value+expires+"; path=/; domain="+domain;
     //document.cookie = name+"="+value+expires+"; path=/";
 }
 
