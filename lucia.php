@@ -135,7 +135,7 @@ if($isMobile) {
 			<div class="row">
 				<div class="content-fixed col-xs-12 col-sm-12 col-md-4 col-lg-4" >	
 					<div class="imagen">
-						<img src="images/modulo-2-su-derecho.jpg" alt="">
+						<img src="images/lucia.jpg" alt="Lucía">
 					</div>
 				</div>
 

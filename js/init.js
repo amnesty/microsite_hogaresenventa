@@ -113,7 +113,9 @@ $(window).scroll(function(event) {
 
     //CREAR COOKIE AL HACER SCROLL
     if(!existeCookie('cookieAlert3')) {
-        crearCookie('cookieAlert3', '1', 365);
+        crearCookie('cookieAlert3', '1', 365, '.es.amnesty.org');
+        //crearCookie('cookieAlert3', '1', 365, '');
+        //console.log(document.cookie);
     }
 
     if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
@@ -276,7 +278,7 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function crearCookie(name,value,days) {
+function crearCookie(name,value,days,domain) {
     //console.log("--> Nombre: "+name+" Valor: "+value+" Dias: "+days);
     if (days) {
         var date = new Date();
@@ -284,7 +286,8 @@ function crearCookie(name,value,days) {
         var expires = "; expires="+date.toGMTString();
     }
     else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
+    document.cookie = name+"="+value+expires+"; path=/;domain="+domain;
+    //document.cookie = name+"="+value+expires+"; path=/";
 }
 
 function existeCookie(name) {

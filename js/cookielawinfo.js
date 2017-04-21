@@ -8,7 +8,9 @@ function cli_show_cookiebar(p) {
 				var expires = "; expires="+date.toGMTString();
 			}
 			else var expires = "";
-			document.cookie = name+"="+value+expires+"; path=/";
+			document.cookie = name+"="+value+expires+"; path=/;domain=.es.amnesty.org";
+			//document.cookie = name+"="+value+expires+"; path=/";
+			//console.log(document.cookie);
 		},
 		read: function(name) {
 			var nameEQ = name + "=";
