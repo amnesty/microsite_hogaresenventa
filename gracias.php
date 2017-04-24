@@ -169,13 +169,13 @@ var google_remarketing_only = false;
 			<div class="rrss">
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
-					<li><a data-e_c="Gracias - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo URL_SITE . TRACK_TW_UTM; ?>" data-texto="Se vende..." class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
-					<li><a data-e_c="Gracias - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="Se vende" data-texto="Se vende..." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="comp gracias TW" data-e_l="comp gracias TW" data-shareurl="<?php echo URL_SITE . TRACK_TW_UTM; ?>" data-texto="Se vende..." class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="comp gracias FB" data-e_l="comp gracias FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="Se vende" data-texto="Se vende..." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 
 ?>
-                	<!--<li><a data-e_c="Gracias - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Se vende...')?>"></a></li>-->
+                	<!--<li><a data-e_c="hogaresenventa" data-e_a="comp gracias WH" data-e_l="comp gracias WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('Se vende...')?>"></a></li>-->
 <?php
 }
 ?>
@@ -184,8 +184,8 @@ if($isMobile) {
 
 			<div class="botones-cabecera">
 				<ul class="clearfix">
-					<?php  /*<li><a data-e_c="Gracias - Header" data-e_a="click" data-e_l="Firma" class="btn-firma send-piwik-event" href="<?php echo URL_SITE ?>"><b>Firma</b></a></li> */ ?>
-					<li><a data-e_c="Gracias - Header" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
+					<?php  /*<li><a data-e_c="hogaresenventa" data-e_a="boton header gracias firma" data-e_l="boton header gracias firma" class="btn-firma send-piwik-event" href="<?php echo URL_SITE ?>"><b>Firma</b></a></li> */ ?>
+					<li><a data-e_c="hogaresenventa" data-e_a="boton header gracias socio" data-e_l="boton header gracias socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
 				</ul>
 			</div><!-- botones-cabecera -->
 		</div><!-- right -->
@@ -212,14 +212,31 @@ if($_GET['error_form'] == 1){
 } else {
 ?>
 							<h2>Gracias por tu firma</h2>
-							<p>Si todavía quieres ayudar más tienes estás dos opciones a tu disposición.</p>
-							<p>Haciendo un donativo <b>recibirás este cartel para que lo cuelgues en tu balcón o ventana.</b> Así podrás difundir el mensaje de la campaña y <b>mostrar tu apoyo a las familias</b> cuyo derecho a la vivienda se vendió.</p>
-							<a data-e_c="Gracias" data-e_a="click" data-e_l="Haz un donativo" target="_blank" class="btn-big-haz-un-donativo orange-white send-piwik-event" href="<?php echo URL_DONA; ?>"><b>Haz un donativo</b></a>
+							<p>Si todavía quieres ayudar más, tienes estás dos opciones:</p>
+							<p>Haz un donativo y <b>recibe este cartel para que lo cuelgues en tu balcón o ventana</b>. Difundirás el mensaje de la campaña y <b>mostrarás tu apoyo a las miles de familias</b> que reivindican su derecho a la vivienda.</p>
+							<a data-e_c="hogaresenventa" data-e_a="boton gracias haz donativo" data-e_l="boton gracias haz donativo" target="_blank" class="btn-big-haz-un-donativo orange-white send-piwik-event" href="<?php echo URL_DONA; ?>"><b>Haz un donativo</b></a>
 <?php
-	if($_GET['s'] != 1) {
+	//if($_GET['s'] != 1) {
+	if(true) {	
 ?>
-							<p>O si lo deseas, puede <b>hacerte socio/a de Amnistía Internacional y defender este y otros muchos derechos</b> que se vulneran en el mundo.</p>
-							<a data-e_c="Gracias" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-big-hazte-socio white-orange send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a>
+							<p>Comparte entre tus contactos la campaña y harás que muchas más personas puedan conocerla y descubran lo que le hizo el Ayuntamiento y la Comunidad de Madrid a miles de familias cuando decidieron vender viviendas públicas a fondos de inversión. Porque si queremos que esto no vuelva a pasar, no podemos quedarnos de brazos cruzados mientras miles de familias se quedan en la calle.</p>
+							<?php /*<a data-e_c="hogaresenventa" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-big-hazte-socio white-orange send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a>*/?>
+
+								<ul class="rrss-interior" class="clearfix">
+									<li><b>Comparte:</b></li>
+									<li><a data-e_c="hogaresenventa" data-e_a="comp gracias TW" data-e_l="comp gracias TW" data-shareurl="<?php echo SL_HOME_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+
+									<li><a data-e_c="hogaresenventa" data-e_a="comp gracias FB" data-e_l="comp gracias FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+				<?php
+				if($isMobile) {
+				?>
+				                	<!--<li><a data-e_c="hogaresenventa" data-e_a="comp gracias WH" data-e_l="comp gracias WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_HOME_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ' . SL_HOME_WH)?>"></a></li>-->
+				<?php
+				}
+				?>
+								</ul>
+
+
 
 <?php
 	}
@@ -263,12 +280,12 @@ if($_GET['error_form'] == 1){
 
 	<!-- Botón firma Mobile  -->
 	<!--<div class="boton-fixed-firma">
-		<a data-e_c="Gracias - Footer" data-e_a="click" data-e_l="Firma" class="btn-big-general firma send-piwik-event" href="<?php echo URL_SITE ?>"><b>Firma</b></a>
+		<a data-e_c="hogaresenventa" data-e_a="boton footer gracias firma" data-e_l="boton footer gracias firma" class="btn-big-general firma send-piwik-event" href="<?php echo URL_SITE ?>"><b>Firma</b></a>
 	</div>-->
 
 
 	<!-- Footer -->
-    <?php 
+    <?php
 	    $no_incluir_piwik = true;
 	    include "includes/footer.php";
     ?>

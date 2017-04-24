@@ -1,4 +1,4 @@
-<footer class="clearfix">
+<footer id="footer" class="clearfix">
   <div class="container">
     <ul class="links clearfix">
       <li><b>Amnistía Internacional 2017</b></li>

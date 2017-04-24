@@ -102,12 +102,12 @@ if($isMobile) {
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <button data-e_c="Home - Calle" data-e_a="stop" data-e_l="Saltar video" type="button" class="close send-piwik-event" data-dismiss="modal" aria-hidden="true">
+            <button data-e_c="hogaresenventa" data-e_a="boton home saltar video" data-e_l="boton home saltar video" type="button" class="close send-piwik-event" data-dismiss="modal" aria-hidden="true">
               <span aria-hidden="true">Saltar video</span>
             </button>
 
             <div class="video-container">
-                <div id="video" data-ytidvideo="84lhB7PkuXA"></div>
+                <div id="video" data-ytidvideo="ZCvw_H65KHs"></div>
             </div>
 
           </div>
@@ -127,13 +127,13 @@ if($isMobile) {
 			<div class="rrss">
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
-					<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_HOME_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="comp home TW" data-e_l="comp home TW" data-shareurl="<?php echo SL_HOME_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-					<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="comp home FB" data-e_l="comp home FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="Home - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_HOME_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ' . SL_HOME_WH)?>"></a></li>-->
+                	<!--<li><a data-e_c="hogaresenventa" data-e_a="comp home WH" data-e_l="comp home WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_HOME_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ' . SL_HOME_WH)?>"></a></li>-->
 <?php
 }
 ?>
@@ -142,8 +142,8 @@ if($isMobile) {
 
 			<div class="botones-cabecera">
 				<ul class="clearfix">
-					<li><a data-e_c="Home - Header" data-e_a="click" data-e_l="Firma" class="btn-firma firma send-piwik-event" href="#"><b>Firma</b></a></li>
-					<li><a data-e_c="Home - Header" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="boton header home firma" data-e_l="boton header home firma" class="btn-firma firma send-piwik-event" href="#"><b>Firma</b></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="boton header home socio" data-e_l="boton header home socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
 				</ul>
 			</div><!-- botones-cabecera -->
 		</div><!-- right -->
@@ -161,7 +161,7 @@ if($isMobile) {
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>El Derecho a la vivienda #NoSeVende</h1>
-							<p>Firma <a data-e_c="Home - Petición" data-e_a="click" data-e_l="Petición" href="#" class="send-piwik-event" title="Firma esta petición" data-toggle="modal" data-target="#modal-peticion"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
+							<p>Firma <a data-e_c="hogaresenventa" data-e_a="home petición" data-e_l="home petición" href="#" class="send-piwik-event" title="Firma esta petición" data-toggle="modal" data-target="#modal-peticion"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 
 							<?php include ('includes/form-firma.php') ?>
 						</div>
@@ -214,11 +214,11 @@ if($isMobile) {
 							<h1>Colabora con la campaña</h1>
 							<p>¡Usemos nuestra casa para defender nuestro derecho a la vivienda! Haz un donativo y recibirás en tu casa un cartel o una pegatina como la de la imagen para que lo coloques donde quieras. Tú eliges el formato y el idioma. Podrás difundir la campaña y mostrar tu apoyo a familias como la de Elena.</p>
 
-							<a data-e_c="Home - Colabora" data-e_a="click" data-e_l="Haz un donativo" target="_blank" class="btn-big-haz-un-donativo orange-white send-piwik-event" href="<?php echo URL_DONA; ?>"><b>Haz un donativo</b></a>
+							<a data-e_c="hogaresenventa" data-e_a="boton home haz donativo" data-e_l="boton home haz donativo" target="_blank" class="btn-big-haz-un-donativo orange-white send-piwik-event" href="<?php echo URL_DONA; ?>"><b>Haz un donativo</b></a>
 
 							<p>Y si quieres dar un paso más y defender cada día el derecho a la vivienda, únete a Amnistía Internacional. Nuestra mejor compañía en esta lucha eres tú.</p>
 
-							<a data-e_c="Home - Colabora" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-big-hazte-socio white-orange send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a>
+							<a data-e_c="hogaresenventa" data-e_a="boton home socio" data-e_l="boton home socio" target="_blank" class="btn-big-hazte-socio white-orange send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a>
 						</div>
 					</div>
 				</div>
@@ -237,7 +237,7 @@ if($isMobile) {
 							<h1>La campaña sale a la calle</h1>
 							<p>Llenamos las calles de Madrid con carteles que vendían algo más que una vivienda. Unos carteles que generan curiosidad e incredulidad a todo el que los encuentra. ¿Quieres ver sus reacciones?</p>
 
-							<a data-e_c="Home - Calle" data-e_a="play" data-e_l="Ver video" class="btn-big-general orange-white send-piwik-event" href="#" data-toggle="modal" data-target="#videoModal"><b>Ver video</b></a>
+							<a data-e_c="hogaresenventa" data-e_a="boton home ver video" data-e_l="boton home ver video" class="btn-big-general orange-white send-piwik-event" href="#" data-toggle="modal" data-target="#videoModal"><b>Ver video</b></a>
 						</div>
 					</div>
 				</div>
@@ -254,7 +254,7 @@ if($isMobile) {
 
 	<!-- Botón firma Mobile  -->
 	<div class="boton-fixed-firma">
-		<a data-e_c="Home - Footer" data-e_a="click" data-e_l="Firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
+		<a data-e_c="hogaresenventa" data-e_a="boton footer home firma" data-e_l="boton footer home firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
 	</div>
 
 	<!-- Footer -->

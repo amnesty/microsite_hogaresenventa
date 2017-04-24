@@ -592,49 +592,48 @@ form .btn-enviar{
 .modulo-interior {
     position: relative;
     width: 100%;
-    overflow: hidden;
-    min-height: 768px;
+    padding: 60px 0 0;
 }
 
-.modulo-interior .content-text .col-12{
-    max-width: 768px;
+.modulo-interior .content-text.right{
+    max-width: 380px;
     width: 100%;
-    margin: auto;
+    margin: 100px auto 0;
     text-align: left;
-    padding: 0 20px;
+    padding: 0;
+    height: auto;
 }
 
-.modulo-interior .container,
-.modulo-interior .row{
+.modulo-interior .imagen  {
+    position: relative;
+    display:block;
+    height: 400px;
+}
+
+.modulo-interior .imagen .row  {
     height: 100%;
 }
 
-.modulo-interior .content-fixed .imagen {
-    position: fixed;
-    overflow: hidden;
-    height: 100%;
-    width: 33.333333%;
-}
-
-.modulo-interior .content-fixed .imagen img  {
+.modulo-interior .imagen img  {
     position: absolute;
     display:block;
     width: 960px;
+    height: 400px;
     top: 0;
     right: 0;
 }
 
-.modulo-interior .content-fixed .imagen a  {
+.modulo-interior .imagen a  {
     display: block;
     z-index: 99;
     height: 100%;
 }
 
-.modulo-interior .content-fixed .imagen a .col-12  {
+.modulo-interior  .imagen a .col-12  {
     z-index: 999;
 }
 
-.modulo-interior .content-fixed span{
+.modulo-interior span{
     font-size: 100px;
     opacity: 0.6;
     color: #ffffff;
@@ -644,57 +643,64 @@ form .btn-enviar{
     transition: all 0.3s ease-in-out;
 }
 
-.modulo-interior .content-fixed a:hover span{
+.modulo-interior a:hover span{
     opacity: 1;
 }
 
-.modulo-interior .content-text {
-    padding: 100px 0 40px;
+.modulo-interior .content-text.left {
+    max-width: 500px;
+    padding: 40px 20px 40px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding: 40px 20px 40px;
+    height: auto;
 }
 
-.modulo-interior .content-text .formulario-general{
-    margin-top: 40px;
-}
-
-.modulo-interior .content-text ul{
+ul.rrss-interior{
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
     float: right;
     display: none;
+    width: 100%;
 }
 
-.modulo-interior .content-text ul li{
+ul.rrss-interior li{
     list-style: none;
     float: left;
     margin-right: 10px;
 }
 
-.modulo-interior .content-text ul li:last-child{
+ul.rrss-interior li:last-child{
     margin-right: 0;
 }
 
-.modulo-interior .content-text ul li:last-child{
+ul.rrss-interior li:last-child{
     margin-right: 0;
 }
 
-.modulo-interior .content-text ul li a {
+ul.rrss-interior li a {
     position: relative;
     top: 3px;
     font-size: 22px;
     color: #232323;
-    text-decoration: none;
+    text-decoration: none!important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
-.modulo-interior .content-text ul li a:hover {
+ul.rrss-interior li a:hover {
     color: #eb6400;
 }
 
 .modulo-interior .formulario-general form {
     max-width: 380px;
+}
+
+.modulo-gracias ul.rrss-interior{
+    display: block;
 }
 
 /* MODULO-GRACIAS */
@@ -758,6 +764,13 @@ form .btn-enviar{
     padding: 10px 5px;
 }
 
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
 /* FOOTER */
 footer{
   position: relative;
@@ -818,7 +831,6 @@ footer .links li{
     .modulo-2-su-derecho  .content-img img,
     .modulo-3-colabora .content-img img,
     .modulo-4-campana .content-img img,
-    .modulo-interior .content-fixed .imagen img,
     .modulo-gracias .content-img img {
         width: 850px;
     }
@@ -828,6 +840,20 @@ footer .links li{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .modulo-interior .col-md-6 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .modulo-interior .content-text.right{
+        margin-top: 40px;
+    }
+    .modulo-interior .content-text.right,
+    .modulo-interior .content-text.left {
+        padding: 20px 20px;
     }
     .modulo-1-firma,
     .modulo-2-su-derecho,
@@ -843,19 +869,36 @@ footer .links li{
     .modulo-2-su-derecho  .content-img,
     .modulo-3-colabora .content-img,
     .modulo-4-campana .content-img,
-    .modulo-interior .content-fixed .imagen,
     .modulo-gracias .content-img {
         height: 615px;
     }
     .content-text{
         padding: 20px 0;
     }
-    .modulo-interior .content-text {
-        padding: 20px 0 20px;
+    .modulo-interior .content-text.left {
+         max-width: 380px;
     }
-    .modulo-interior .content-fixed .imagen {
-        position: relative;
-        width: 100%;
+}
+
+/* max-width: 767 */
+@media only screen and (max-width: 767px) {
+    .modulo-interior .col-md-6 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .modulo-interior .content-text.right {
+        margin-top: 0;
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        margin-bottom: 40px;
     }
 }
 
@@ -869,7 +912,13 @@ footer .links li{
     .interior .botones-cabecera{
         display: block;
     }
+    .gracias .botones-cabecera{
+        display: block;
+    }
     .interior .botones-cabecera .btn-hazte-socio{
+        display: block;
+    }
+    .gracias .botones-cabecera .btn-hazte-socio{
         display: block;
     }
     .interior .botones-cabecera .btn-firma{
@@ -878,14 +927,14 @@ footer .links li{
     .interior header .right .rrss {
         display: none;
     }
+    .gracias header .right .rrss {
+        display: none;
+    }
     .interior header .right ul li {
         margin-right: 0;
     }
-    .modulo-interior .content-text ul{
+    ul.rrss-interior{
         display: block;
-    }
-    .modulo-interior .content-text .formulario-general{
-        margin-top: 80px;
     }
 
     /*
@@ -902,14 +951,14 @@ footer .links li{
 /* max-width: 500 */
 @media only screen and (max-width: 500px) {
     .content-text,
-    .modulo-interior .content-text{
+    .modulo-interior .content-text,
+    .modulo-interior .content-text.left {
         padding: 20px 20px;
     }
     .modulo-1-firma .content-img img,
     .modulo-2-su-derecho  .content-img img,
     .modulo-3-colabora .content-img img,
     .modulo-4-campana .content-img img,
-    .modulo-interior .content-fixed .imagen img,
     .modulo-gracias .content-img img {
         width: 550px;
     }
@@ -917,7 +966,6 @@ footer .links li{
     .modulo-2-su-derecho  .content-img,
     .modulo-3-colabora .content-img,
     .modulo-4-campana .content-img,
-    .modulo-interior .content-fixed .imagen,
     .modulo-gracias .content-img {
         height: 425px;
     }

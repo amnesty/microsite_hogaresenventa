@@ -100,12 +100,12 @@ if($isMobile) {
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <button data-e_c="Elena - Caso" data-e_a="stop" data-e_l="Saltar video" type="button" class="close send-piwik-event" data-dismiss="modal" aria-hidden="true">
+            <button data-e_c="hogaresenventa" data-e_a="boton elena saltar video" data-e_l="boton elena saltar video" type="button" class="close send-piwik-event" data-dismiss="modal" aria-hidden="true">
               <span aria-hidden="true">Saltar video</span>
             </button>
 
             <div class="video-container">
-                <div id="video" data-ytidvideo="oXSdmIyrsW8"></div>
+                <div id="video" data-ytidvideo="ZCvw_H65KHs"></div>
             </div>
 
           </div>
@@ -125,13 +125,13 @@ if($isMobile) {
 			<div class="rrss">
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li><!--redes header-->
-					<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_ELENA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="comp elena TW" data-e_l="comp elena TW" data-shareurl="<?php echo SL_ELENA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-					<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="comp elena FB" data-e_l="comp elena FB" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_ELENA_WH)?>"></a></li>-->
+                	<!--<li><a data-e_c="hogaresenventa" data-e_a="comp elena WH" data-e_l="comp elena WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_ELENA_WH)?>"></a></li>-->
 <?php
 }
 ?>
@@ -140,8 +140,8 @@ if($isMobile) {
 
 			<div class="botones-cabecera">
 				<ul class="clearfix">
-					<li><a data-e_c="Elena - Header" data-e_a="click" data-e_l="Firma" class="btn-firma firma send-piwik-event" href="#"><b>Firma</b></a></li>
-					<li><a data-e_c="Elena - Header" data-e_a="click" data-e_l="Hazte socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="boton header elena firma" data-e_l="boton header elena firma" class="btn-firma firma send-piwik-event" href="#"><b>Firma</b></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="boton header elena socio" data-e_l="boton header elena socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
 				</ul>
 			</div><!-- botones-cabecera -->
 		</div><!-- right -->
@@ -151,54 +151,67 @@ if($isMobile) {
 
 		<div class="container">
 			<div class="row">
-				<div class="content-fixed col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
 					<div class="imagen">
-
 						<img src="images/elena.jpg" alt="Elena">
-						<a data-e_c="Elena - Caso" data-e_a="play" data-e_l="Ver video" href="#" data-toggle="modal" data-target="#videoModal" class="send-piwik-event">
+						<a data-e_c="hogaresenventa" data-e_a="boton elena ver video" data-e_l="boton elena ver video" href="#" data-toggle="modal" data-target="#videoModal" class="send-piwik-event">
 						<div class="row middle center">
 							<div class="col-12">
 								<span class="fa fa-play-circle"></span>
 							</div>
 						</div>
 						</a>
+					</div>
+
+					<div class="left content-text">
+
+						<ul class="rrss-interior clearfix">
+							<li><a data-e_c="hogaresenventa" data-e_a="comp elena TW" data-e_l="comp elena TW" data-shareurl="<?php echo SL_ELENA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+
+							<li><a data-e_c="hogaresenventa" data-e_a="comp elena FB" data-e_l="comp elena FB" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+	<?php
+	if($isMobile) {
+	?>
+	        				<!--<li><a data-e_c="hogaresenventa" data-e_a="comp elena WH" data-e_l="comp elena wh" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_ELENA_WH)?>"></a></li>-->
+	<?php
+	}
+	?>
+						</ul>
+
+						<div class="formulario-general mobile">
+							<h1>El Derecho a la vivienda #NoSeVende</h1>
+							<p>Firma <a data-e_c="hogaresenventa" data-e_a="elena petición" data-e_l="elena petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
+
+
+							<?php include ('includes/form-firma.php') ?>
+						</div>
+
+						<h2>Su derecho #NoSeVende</h2>
+						<p>Elena nunca olvidará el día que recibió las llaves de su nueva casa. Una vivienda social en alquiler que, ocho años más tarde, la Comunidad de Madrid vendió a un fondo de inversión sin ni siquiera informarle.</p>
+
+						<p>La historia acabó en desahucio. Elena y sus hijos pequeños tuvieron que meter en cajas ocho años de su vida. No solo sus enseres, sino también todas sus ilusiones y sus recuerdos.</p>
+
+						<p>Durante todo el proceso, Elena se ha visto totalmente ninguneada por una administración que se desentiende porque su vivienda ya no es pública. Elena no quiere que nadie le regale nada. Solo quiere una vivienda digna en la que vivir. Porque el derecho a la vivienda de Elena y de las miles de familias que se han visto en su misma situación, no se vende.</p>
 
 					</div>
+
+
 				</div>
 
-				<div class="content-text col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<div class="content-text right col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row">
+
+
 						<div class="col-12">
 
-							<h1>Su derecho #NoSeVende</h1>
-							<!--<p>Elena y sus tres hijos vivían en una vivienda social hasta que el ayuntamiento de Madrid la vendió a un fondo de inversión, sin contar con ella e incumpliendo la ley. Elena tiene derecho a una vivienda digna.</p>-->
-							<p>La clínica se ofreció a organizar el entierro y, muchos años después, Flor descubrió que el bebé no estaba enterrado donde aseguraba la clínica, y su cuerpo nunca apareció.</p>
-							<p>¿Dónde está entonces el hermano de Flor?
-							Flor lucha para que se sepa la verdad y se haga justicia. Ante la sospecha de que su hermano pudo ser robado al nacer, Flor puso una denuncia en España, de la que no ha tenido respuesta , y también sumó su caso a la querella argentina.
-							En 2013, la juez argentina María Servini pidió interrogar al ginecólogo Abelardo García por su posible relación con el presunto robo del hermano de Flor. Pero el gobierno español está bloqueando la investigación.
-							El caso de Flor no es único. Miles de niños y niñas podrían haber sido objeto de secuestro, tráfico de menores y adopciones ilegales durante la guerra civil y el franquismo.
-							Nunca volvieron a casa. Lo único que sus familias piden es justicia.</p>
+							<div class="formulario-general desktop clearfix">
+								<h1 class="clearfix">El Derecho a la vivienda #NoSeVende</h1>
 
-							<ul class="clearfix">
-								<li><b>Comparte:</b></li><!--redes caso interior-->
-								<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Twitter" data-shareurl="<?php echo SL_ELENA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
-
-								<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Facebook" data-shareurl="<?php echo URL_SITE . 'elena' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
-<?php
-if($isMobile) {
-?>
-                				<!--<li><a data-e_c="Elena - Header" data-e_a="share" data-e_l="Whatsapp" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_ELENA_WH)?>"></a></li>-->
-<?php
-}
-?>
-							</ul>
-
-							<div class="formulario-general">
-								<h1>El Derecho a la vivienda #NoSeVende</h1>
-								<p>Firma <a data-e_c="Elena - Caso" data-e_a="click" data-e_l="Petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
+								<p>Firma <a data-e_c="hogaresenventa" data-e_a="elena petición" data-e_l="elena petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 
 								<?php include ('includes/form-firma.php') ?>
 							</div>
+
 
 						</div>
 					</div>
@@ -210,7 +223,7 @@ if($isMobile) {
 
 	<!-- Botón firma Mobile  -->
 	<div class="boton-fixed-firma">
-		<a data-e_c="Elena - Footer" data-e_a="click" data-e_l="Firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
+		<a data-e_c="hogaresenventa" data-e_a="boton footer elena firma" data-e_l="boton footer elena firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
 	</div>
 
 	<!-- Footer -->
