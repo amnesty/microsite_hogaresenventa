@@ -13,7 +13,7 @@
   }
 ?>
 
-<form style="display: visible" id="formFirma" action="includes/enviar_form.php" method="post" onsubmit="return validarFormFirma(document.forms['formFirma']);">
+<form style="display: visible" id="<?=$id_formulario?>" action="includes/enviar_form.php" method="post" onsubmit="return validarFormFirma(document.forms['<?=$id_formulario?>']);">
     <div class="form-group">
         <input type="text" class="form-control" name="nombre" placeholder="Nombre*">
     <p class="error nombre">No has introducido este dato.</p>

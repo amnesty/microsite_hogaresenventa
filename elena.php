@@ -169,9 +169,10 @@ if($isMobile) {
 						<div class="formulario-general mobile">
 							<h1>El Derecho a la vivienda #NoSeVende</h1>
 							<p>Firma <a data-e_c="hogaresenventa" data-e_a="elena petición" data-e_l="elena petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
-<?php if($isMobile) {
+<?php
+	$id_formulario = "formFirmaMobile";
 	include ('includes/form-firma.php');
-} ?>
+?>
 						</div>
 
 						<h2>Su derecho #NoSeVende</h2>
@@ -190,9 +191,9 @@ if($isMobile) {
 	if($isMobile) {
 	?>
 	        				<!--<li><a data-e_c="hogaresenventa" data-e_a="elena comp WH" data-e_l="elena comp wh" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Elena #NoSeVende. Conoce su historia y firma para que le den una solución '. SL_ELENA_WH)?>"></a></li>-->
-		<?php
-		}
-		?>
+	<?php
+	}
+	?>
 						</ul>
 
 					</div>
@@ -213,9 +214,10 @@ if($isMobile) {
 
 								<p>Firma <a data-e_c="hogaresenventa" data-e_a="elena petición" data-e_l="elena petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 
-<?php if(!$isMobile) {
+<?php
+	$id_formulario = "formFirma";
 	include ('includes/form-firma.php');
-} ?>
+?>
 							</div>
 
 
