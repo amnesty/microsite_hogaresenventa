@@ -6,7 +6,7 @@
   </div>
 </footer>
 <?php
-if($no_incluir_piwik == false) {
+if( isset($no_incluir_piwik) && $no_incluir_piwik == false) {
 ?>
 <!-- Piwik -->
 <script type="text/javascript">

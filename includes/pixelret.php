@@ -3,7 +3,7 @@
 if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
 
 	//VIENE DE GOOGLE anuncios DISPLAY
-	if($_SESSION['pk_campaign'] == 'anunggl_display' || $_SESSION['utm_campaign'] == 'anunggl_display') {
+	if( isset($_SESSION['pk_campaign']) && $_SESSION['pk_campaign'] == 'anunggl_display' || isset($_SESSION['utm_campaign']) && $_SESSION['utm_campaign'] == 'anunggl_display') {
 ?>
 	<!-- Etiqueta remarketing AI Google DISPLAY.txt -->
 	<script type="text/javascript">
@@ -22,9 +22,9 @@ if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
 	</noscript>
 <?php
 	}
-	
+
 	//VIENE DE GOOGLE anuncios GRANT
-	if($_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl') {
+	if(isset($_SESSION['pk_campaign']) && $_SESSION['pk_campaign'] == 'anunggl' || isset($_SESSION['utm_campaign']) && $_SESSION['utm_campaign'] == 'anunggl') {
 ?>
 	<!-- Etiqueta remarketing AI Google GRANT.txt -->
 	<script type="text/javascript">
