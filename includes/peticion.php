@@ -12,7 +12,7 @@
         <p>
         Estimadas Sra. Cifuentes y Sra. Carmena,<br/><br/>
 
-        Les escribo para mostrarle mi preocupación por la venta de vivienda social a fondos de inversión por parte de las autoridades locales y autonómicas en los años 2012 y 2013. En total fueron vendidas 4.795, 2.935 viviendas por parte del Instituto de la Vivienda de Madrid (IVIMA), la actual Agencia de la Vivienda Social de la Comunidad de Madrid y 1.860 viviendas por parte de la Empresa Municipal de la Vivienda y Suelo de Madrid (EMVS).<br/><br/>
+        Les escribo para mostrarle mi preocupación por la venta de vivienda social a fondos de inversión por parte de las autoridades locales y autonómicas durante los años 2011 a 2013. En total fueron vendidas 4.795, 2.935 viviendas por parte del Instituto de la Vivienda de Madrid (IVIMA), la actual Agencia de la Vivienda Social de la Comunidad de Madrid y 1.860 viviendas por parte de la Empresa Municipal de la Vivienda y Suelo de Madrid (EMVS).<br/><br/>
 
         Las personas inquilinas no fueron consultadas y la venta de sus viviendas se les comunicó a posteriori. En algunos casos, la venta se les comunicó en una carta certificada que decía que los nuevos compradores, fondos de inversión, se subrogaban en derechos y obligaciones. Sin embargo, en otros casos, las personas no tuvieron conocimiento de la situación hasta que acudieron a las oficinas del IVIMA o de la EMVS para preguntar por su situación.<br/><br/>
 

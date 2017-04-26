@@ -367,6 +367,15 @@ header .right .rrss ul li a:hover {
     right: 0;
 }
 
+.box-fijo{
+    position: absolute;
+    bottom: 24%;
+    z-index: 3;
+    max-width: 400px;
+    width: 100%;
+    right: 100px;
+}
+
 /* MODULO-2-SU-DERECHO */
 /* --------------------------------- */
 .modulo-2-su-derecho {
@@ -734,6 +743,7 @@ ul.rrss-interior li a:hover {
 
 
 #cookie-law-info-bar {
+    position: fixed;
     padding: 5px 10px 5px!important;
     background: #232323!important;
     top: 60px!important;
@@ -754,6 +764,7 @@ ul.rrss-interior li a:hover {
     bottom: 0;
     width: 100%;
     display: none;
+    z-index: 3
 }
 
 .boton-fixed-firma a{
@@ -811,11 +822,17 @@ footer .links li{
     .modulo-gracias .content-img img {
         width: 768px;
     }
+    .box-fijo {
+        right: 20px;
+    }
 
 }
 
 /* max-width: 850 */
 @media only screen and (max-width: 850px) {
+    .box-fijo {
+        bottom: 4%;
+    }
     .modulo-1-firma {
         padding-top: 0;
     }
@@ -865,7 +882,12 @@ footer .links li{
         overflow: visible;
         padding-bottom: 20px;
     }
-    .modulo-1-firma .content-img,
+     .modulo-1-firma .content-img{
+        height: 690px;
+     }
+     .box-fijo {
+        right: 45px;
+    }
     .modulo-2-su-derecho  .content-img,
     .modulo-3-colabora .content-img,
     .modulo-4-campana .content-img,
@@ -949,7 +971,30 @@ footer .links li{
 }
 
 /* max-width: 500 */
+@media only screen and (max-height: 930px) {
+    .box-fijo{
+        bottom: 15%;
+    }
+}
+
+/* max-width: 500 */
+@media only screen and (max-height: 810px) {
+    .box-fijo{
+        bottom: 5%;
+    }
+}
+
+/* max-width: 500 */
 @media only screen and (max-width: 500px) {
+    .box-fijo p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .box-fijo {
+        bottom: 2%;
+        max-width: 300px;
+        right: 0;
+    }
     .content-text,
     .modulo-interior .content-text,
     .modulo-interior .content-text.left {
@@ -962,7 +1007,9 @@ footer .links li{
     .modulo-gracias .content-img img {
         width: 550px;
     }
-    .modulo-1-firma .content-img,
+    .modulo-1-firma .content-img{
+        height: 535px;
+    }
     .modulo-2-su-derecho  .content-img,
     .modulo-3-colabora .content-img,
     .modulo-4-campana .content-img,
@@ -983,5 +1030,7 @@ footer .links li{
     }
 
 }
+
+
 
 

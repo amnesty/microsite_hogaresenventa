@@ -16,7 +16,7 @@ AddDefaultCharset UTF-8
 php_value default_charset UTF-8
 
 # Server Local estrés
-RewriteBase /hogaresenventa/
+RewriteBase /microsite_hogaresenventa/
 
 # Testing Estresarte
 #RewriteBase /amnistia/hogaresenventa/
@@ -24,15 +24,22 @@ RewriteBase /hogaresenventa/
 #Servidor Amnisita
 #RewriteBase /hogaresenventa/
 
+
 #RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 #RewriteRule ^ /%1.html [R=302,L,NE]
 
+
+# Add trailing slash
+RewriteCond %{REQUEST_URI} !(/$|\.) 
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L] 
 
 # Permite que los archivos o directorios que existen sean mostrados directamente
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^/]+)$ $1.php [L]
+RewriteRule ^([^/]+)/$ $1.php [L]
+
+
 
 
 <ifmodule mod_expires.c>

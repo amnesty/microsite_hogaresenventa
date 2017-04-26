@@ -3,33 +3,34 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<base href="<?php echo URL_SITE; ?>">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 	<title>El Derecho a la Vivienda #NoSeVende - Amnistía Internacional</title>
-    <meta name="description" content="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar.">
-	<link rel="canonical" href="<?php echo URL_SITE; ?>lucia" />
+    <meta name="description" content="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla. ">
+	<link rel="canonical" href="<?php echo URL_SITE; ?>lucia/" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>images/compartir-tw-caso-lucia.png" />
     <link rel="icon" href="favicon.ico?v=4" type="image/x-icon" />
     <meta name="pinterest-rich-pin" content="false" />
     <meta name="pinterest" content="nopin" />
 
     <!--Open Graph-->
-    <meta property="og:url" content="<?php echo URL_SITE; ?>lucia" />
+    <meta property="og:url" content="<?php echo URL_SITE; ?>lucia/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:title" content="El Derecho a la Vivienda #NoSeVende" />
-    <meta property="og:description" content="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar." />
+    <meta property="og:title" content="Su derecho #NoSeVende – Amnistía Internacional" />
+    <meta property="og:description" content="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." />
     <meta property="og:site_name" content="Amnistía Internacional" />
-    <meta property="og:image" content="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.png" />
+    <meta property="og:image" content="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <!--Twitter Cardas-->
-    <meta name="twitter:url" content="<?php echo URL_SITE; ?>lucia" />
+    <meta name="twitter:url" content="<?php echo URL_SITE; ?>lucia/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
-    <meta name="twitter:title" content="El Derecho a la Vivienda #NoSeVende" />
-    <meta name="twitter:description" content="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar." />
+    <meta name="twitter:title" content="Su derecho #NoSeVende – Amnistía Internacional" />
+    <meta name="twitter:description" content="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." />
     <meta name="twitter:image" content="<?php echo URL_SITE; ?>images/compartir-tw-caso-lucia.png" />
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
@@ -107,13 +108,13 @@ if($isMobile) {
 			<div class="rrss"><!--redes header-->
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
-					<li><a data-e_c="hogaresenventa" data-e_a="comp elena TW" data-e_l="comp elena TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="lucía comp TW" data-e_l="lucía comp TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-					<li><a data-e_c="hogaresenventa" data-e_a="comp elena FB" data-e_l="comp elena FB" data-shareurl="<?php echo URL_SITE . 'lucia' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="lucía comp FB" data-e_l="lucía comp FB" data-shareurl="<?php echo URL_SITE . 'lucia/' . TRACK_FB_UTM; ?>" data-title="Su derecho #NoSeVende – Amnistía Internacional" data-texto="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="hogaresenventa" data-e_a="comp elena WH" data-e_l="comp elena WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar ' . SL_LUCIA_WH )?>"></a></li>-->
+                	<!--<li><a data-e_c="hogaresenventa" data-e_a="lucía comp WH" data-e_l="lucía comp WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución ' . SL_LUCIA_WH )?>"></a></li>-->
 <?php
 }
 ?>
@@ -122,8 +123,8 @@ if($isMobile) {
 
 			<div class="botones-cabecera">
 				<ul class="clearfix">
-					<li><a data-e_c="hogaresenventa" data-e_a="boton header lucía firma" data-e_l="boton header lucía firma" class="btn-firma firma send-piwik-event" href="#"><b>Firma</b></a></li>
-					<li><a data-e_c="hogaresenventa" data-e_a="boton header lucía socio" data-e_l="boton header lucía socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="lucía boton header firma" data-e_l="lucía boton header firma" class="btn-firma firma send-piwik-event" href="#"><b>Firma</b></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="lucía boton header socio" data-e_l="lucía boton header socio" target="_blank" class="btn-hazte-socio send-piwik-event" href="<?php echo URL_SOCIO; ?>"><b>Hazte Socio/a</b></a></li>
 				</ul>
 			</div><!-- botones-cabecera -->
 		</div><!-- right -->
@@ -135,30 +136,17 @@ if($isMobile) {
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
 					<div class="imagen">
-						<img src="images/lucia.jpg" alt="Lucía">
+						<img src="images/lucia.jpg" alt="Su derecho no se vende. Firma por Lucía">
 					</div>
 
 					<div class="content-text left">
-						<ul class="rrss-interior clearfix">
-							<li><b>Comparte:</b></li><!--redes caso interior-->
-							<li><a data-e_c="hogaresenventa" data-e_a="comp elena TW" data-e_l="comp elena TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
-
-							<li><a data-e_c="hogaresenventa" data-e_a="comp elena FB" data-e_l="comp elena FB" data-shareurl="<?php echo URL_SITE . 'lucia' . TRACK_FB_UTM; ?>" data-title="El derecho a la vivienda #NoSeVende" data-texto="En 2012 se vendieron en Madrid viviendas sociales con gente dentro a fondos de inversión. Firma para que ninguna familia pierda su hogar" data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
-<?php
-if($isMobile) {
-?>
-            				<!--<li><a data-e_c="hogaresenventa" data-e_a="comp elena Wh" data-e_l="comp elena WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar '. SL_LUCIA_WH)?>"></a></li>-->
-<?php
-}
-?>
-						</ul>
-
+						
 						<div class="formulario-general mobile">
 							<h1>El Derecho a la vivienda #NoSeVende</h1>
 							<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
-
-
-							<?php include ('includes/form-firma.php') ?>
+<?php if($isMobile) {
+	include ('includes/form-firma.php');
+} ?>
 						</div>
 
 						<h2>Su derecho #NoSeVende</h2>
@@ -169,6 +157,20 @@ if($isMobile) {
 						<p>Lucía ha movido cielo y tierra para mantener su casa, pero no puede pagarla y la Comunidad de Madrid se ha desentendido. Sólo tiene el apoyo de su madre y sabe que ella y su hija podrían quedarse en la calle en cualquier momento.</p>
 
 						<p>Lucía solo quiere una vivienda digna en la que vivir. Porque el derecho a la vivienda de Lucía y de las miles de familias que están en la misma situación, no se vende.</p>
+
+						<ul class="rrss-interior clearfix">
+							<li><b>Comparte:</b></li><!--redes caso interior-->
+							<li><a data-e_c="hogaresenventa" data-e_a="lucía comp TW" data-e_l="lucía comp TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+
+							<li><a data-e_c="hogaresenventa" data-e_a="lucía comp FB" data-e_l="lucía comp FB" data-shareurl="<?php echo URL_SITE . 'lucia/' . TRACK_FB_UTM; ?>" data-title="Su derecho #NoSeVende – Amnistía Internacional" data-texto="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+<?php
+if($isMobile) {
+?>
+            				<!--<li><a data-e_c="hogaresenventa" data-e_a="lucía comp WH" data-e_l="lucía comp WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución '. SL_LUCIA_WH)?>"></a></li>-->
+<?php
+}
+?>
+						</ul>
 					</div>
 				</div>
 
@@ -180,9 +182,9 @@ if($isMobile) {
 							<div class="formulario-general desktop">
 								<h1>El Derecho a la vivienda #NoSeVende</h1>
 								<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
-
-
-								<?php include ('includes/form-firma.php') ?>
+<?php if(!$isMobile) {
+	include ('includes/form-firma.php');
+} ?>
 							</div>
 						</div>
 
@@ -195,7 +197,7 @@ if($isMobile) {
 
 	<!-- Botón firma Mobile  -->
 	<div class="boton-fixed-firma">
-		<a data-e_c="hogaresenventa" data-e_a="boton footer lucía firma" data-e_l="boton footer lucía firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
+		<a data-e_c="hogaresenventa" data-e_a="lucía boton footer firma" data-e_l="lucía boton footer firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
 	</div>
 
 	<!-- Footer -->

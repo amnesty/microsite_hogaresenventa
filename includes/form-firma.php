@@ -146,7 +146,7 @@
 
     <div class="form-check">
         <label class="form-check-label">
-           <input type="checkbox" checked="true" class="form-check-input" name="politica">Deseo más información de Amnistía Internacional. </br> Al participar aceptas la <a href="https://www.es.amnesty.org/politica-de-privacidad/" target="_blank">Política de Privacidad.</a>
+           <input type="checkbox" checked class="form-check-input" name="politica">Deseo más información de Amnistía Internacional. <br /> Al participar aceptas la <a href="https://www.es.amnesty.org/politica-de-privacidad/" target="_blank">Política de Privacidad.</a>
         </label>
     </div>
 

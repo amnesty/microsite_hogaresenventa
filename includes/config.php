@@ -11,7 +11,7 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" ) ) {
 	define("URL_SITE",     "http://testing.estresarte.com/amnistia/hogaresenventa/"); // Producción estrés
 } else {
-	define("URL_SITE",     "http://hogaresenventa.org/"); // Producción Amnistía
+	define("URL_SITE",     "https://www.es.amnesty.org/hogaresenventa/"); // Producción Amnistía
 }
 
 //Links to CRM Amnistía
@@ -26,25 +26,25 @@ define ("TRACK_WH_UTM", "?utm_source=whatsapp&utm_campaign=comp&utm_medium=socia
 
 
 /* Short URL Twitter */
-// http://hogaresenventa.org/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
-define ("SL_HOME_TW", "https://goo.gl/f9gLqh"); 
+// https://www.es.amnesty.org/hogaresenventa/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
+define ("SL_HOME_TW", "https://goo.gl/rRLg9I"); 
 
-// http://hogaresenventa.org/elena?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
-define ("SL_ELENA_TW", "https://goo.gl/X8O7V6");
+// https://www.es.amnesty.org/hogaresenventa/elena/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
+define ("SL_ELENA_TW", "https://goo.gl/VbMYEe");
 
-// http://hogaresenventa.org/lucia?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
-define ("SL_LUCIA_TW", "https://goo.gl/bLHyn0");
+// https://www.es.amnesty.org/hogaresenventa/lucia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
+define ("SL_LUCIA_TW", "https://goo.gl/HjFZ94");
 
 
 /* Short URL Whatsapp */
-// http://hogaresenventa.org/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
-define ("SL_HOME_WH", "https://goo.gl/n3D5wb");
+// https://www.es.amnesty.org/hogaresenventa/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
+define ("SL_HOME_WH", "https://goo.gl/NYkJZV");
 
-// http://hogaresenventa.org/elena?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
-define ("SL_ELENA_WH", "https://goo.gl/kEjUjq");
+// https://www.es.amnesty.org/hogaresenventa/elena/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
+define ("SL_ELENA_WH", "https://goo.gl/7Tv7t7");
 
-// http://hogaresenventa.org/lucia?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
-define ("SL_LUCIA_WH", "https://goo.gl/FSRYBO");
+// https://www.es.amnesty.org/hogaresenventa/lucia/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
+define ("SL_LUCIA_WH", "https://goo.gl/pk1Ozp");
 
 
 
