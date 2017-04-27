@@ -6,7 +6,7 @@
 	<base href="<?php echo URL_SITE; ?>">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 	<title>El Derecho a la Vivienda #NoSeVende - Amnistía Internacional</title>
-    <meta name="description" content="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla. ">
+    <meta name="description" content="Firma para que se proteja el  derecho de Lucía a una vivienda. Su vivienda social fue vendida a un fondo de inversión y ahora no puede pagarla.">
 	<link rel="canonical" href="<?php echo URL_SITE; ?>lucia/" />
     <link rel="image_src" href="<?php echo URL_SITE; ?>images/compartir-tw-caso-lucia.png" />
     <link rel="icon" href="favicon.ico?v=4" type="image/x-icon" />
@@ -18,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content="Su derecho #NoSeVende – Amnistía Internacional" />
-    <meta property="og:description" content="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." />
+    <meta property="og:description" content="Firma para que se proteja el  derecho de Lucía a una vivienda. Su vivienda social fue vendida a un fondo de inversión y ahora no puede pagarla." />
     <meta property="og:site_name" content="Amnistía Internacional" />
     <meta property="og:image" content="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -30,7 +30,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="Su derecho #NoSeVende – Amnistía Internacional" />
-    <meta name="twitter:description" content="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." />
+    <meta name="twitter:description" content="Firma para que se proteja el  derecho de Lucía a una vivienda. Su vivienda social fue vendida a un fondo de inversión y ahora no puede pagarla." />
     <meta name="twitter:image" content="<?php echo URL_SITE; ?>images/compartir-tw-caso-lucia.png" />
     <meta name="twitter:image:width" content="1024" />
     <meta name="twitter:image:height" content="512" />
@@ -108,13 +108,13 @@ if($isMobile) {
 			<div class="rrss"><!--redes header-->
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
-					<li><a data-e_c="hogaresenventa" data-e_a="lucía comp TW" data-e_l="lucía comp TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="lucía comp TW" data-e_l="lucía comp TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que no la echen de su casa" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-					<li><a data-e_c="hogaresenventa" data-e_a="lucía comp FB" data-e_l="lucía comp FB" data-shareurl="<?php echo URL_SITE . 'lucia/' . TRACK_FB_UTM; ?>" data-title="Su derecho #NoSeVende – Amnistía Internacional" data-texto="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="lucía comp FB" data-e_l="lucía comp FB" data-shareurl="<?php echo URL_SITE . 'lucia/' . TRACK_FB_UTM; ?>" data-title="Su derecho #NoSeVende – Amnistía Internacional" data-texto="Firma para que se proteja el  derecho de Lucía a una vivienda. Su vivienda social fue vendida a un fondo de inversión y ahora no puede pagarla." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-                	<!--<li><a data-e_c="hogaresenventa" data-e_a="lucía comp WH" data-e_l="lucía comp WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo URL_SITE . TRACK_WH_UTM; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución ' . SL_LUCIA_WH )?>"></a></li>-->
+                	<li><a data-e_c="hogaresenventa" data-e_a="lucía comp WH" data-e_l="lucía comp WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_LUCIA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que no la echen de su casa ' . SL_LUCIA_WH )?>"></a></li>
 <?php
 }
 ?>
@@ -161,13 +161,13 @@ if($isMobile) {
 
 						<ul class="rrss-interior clearfix">
 							<li><b>Comparte:</b></li><!--redes caso interior-->
-							<li><a data-e_c="hogaresenventa" data-e_a="lucía comp TW" data-e_l="lucía comp TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
+							<li><a data-e_c="hogaresenventa" data-e_a="lucía comp TW" data-e_l="lucía comp TW" data-shareurl="<?php echo SL_LUCIA_TW; ?>" data-texto="El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que no la echen de su casa" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
 
-							<li><a data-e_c="hogaresenventa" data-e_a="lucía comp FB" data-e_l="lucía comp FB" data-shareurl="<?php echo URL_SITE . 'lucia/' . TRACK_FB_UTM; ?>" data-title="Su derecho #NoSeVende – Amnistía Internacional" data-texto="Firma para que se respete el  derecho a una vivienda de Lucía. Su vivienda social fue vendida a un fondo privado y ahora no puede pagarla." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+							<li><a data-e_c="hogaresenventa" data-e_a="lucía comp FB" data-e_l="lucía comp FB" data-shareurl="<?php echo URL_SITE . 'lucia/' . TRACK_FB_UTM; ?>" data-title="Su derecho #NoSeVende – Amnistía Internacional" data-texto="Firma para que se proteja el  derecho de Lucía a una vivienda. Su vivienda social fue vendida a un fondo de inversión y ahora no puede pagarla." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb-caso-lucia.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
-            				<!--<li><a data-e_c="hogaresenventa" data-e_a="lucía comp WH" data-e_l="lucía comp WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_ELENA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que le den una solución '. SL_LUCIA_WH)?>"></a></li>-->
+            				<li><a data-e_c="hogaresenventa" data-e_a="lucía comp WH" data-e_l="lucía comp WH" class="fa fa-whatsapp send-piwik-event" title="Compartir en Whatsapp" data-href="<?php echo SL_LUCIA_WH; ?>" data-action="share/whatsapp/share" href="whatsapp://send?text=<?=urlencode('El derecho a la vivienda de Lucía #NoSeVende. Conoce su historia y firma para que no la echen de su casa '. SL_LUCIA_WH)?>"></a></li>
 <?php
 }
 ?>
