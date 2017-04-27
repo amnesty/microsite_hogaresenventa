@@ -152,6 +152,12 @@ if($isMobile) {
 
 	<section class="modulo-1-firma ancla-firma">
 
+		 <a id="scroll-raton" href="#modulo-2"><div class="scroll-downs-raton">
+		  <div class="mousey-raton">
+		   <div class="scroller-raton"></div>
+		  </div>
+		</div></a>
+
 		<div class="container">
 			<div class="row">
 				<div class="content-img col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -171,7 +177,7 @@ if($isMobile) {
 
 <?php
 $id_formulario = "formFirma";
-include ('includes/form-firma.php'); 
+include ('includes/form-firma.php');
 ?>
 						</div>
 					</div>
@@ -181,7 +187,7 @@ include ('includes/form-firma.php');
 
 	</section>
 
-	<section class="modulo-2-su-derecho">
+	<section id="modulo-2" class="modulo-2-su-derecho">
 		<div class="container">
 			<div class="row">
 				<div class="div1-2 content-text col-xs-12 col-sm-12 col-md-6 col-lg-6">

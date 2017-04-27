@@ -330,7 +330,6 @@ header .right .rrss ul li a:hover {
 .content-text .col-12{
     max-width: 380px;
     width: 100%;
-    margin: auto;
     text-align: left;
 }
 
@@ -374,6 +373,40 @@ header .right .rrss ul li a:hover {
     max-width: 400px;
     width: 100%;
     right: 100px;
+}
+
+.scroll-downs-raton {
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+  margin: auto;
+  z-index: 3;
+  width :34px;
+  height: 55px;
+}
+.mousey-raton {
+  width: 3px;
+  padding: 10px 15px;
+  height: 55px;
+  border: 2px solid #232323;
+  border-radius: 25px;
+  opacity: 0.75;
+}
+.scroller-raton {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #232323;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
 
 /* MODULO-2-SU-DERECHO */
@@ -830,8 +863,11 @@ footer .links li{
 
 /* max-width: 850 */
 @media only screen and (max-width: 850px) {
+    .scroll-downs-raton {
+      display: none;
+    }
     .box-fijo {
-        bottom: 4%;
+        bottom: 4%!important;
     }
     .modulo-1-firma {
         padding-top: 0;
@@ -978,7 +1014,7 @@ footer .links li{
 }
 
 /* max-width: 500 */
-@media only screen and (max-height: 810px) {
+@media only screen and (max-height: 830px) {
     .box-fijo{
         bottom: 5%;
     }

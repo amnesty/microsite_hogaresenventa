@@ -1,6 +1,7 @@
 var player = {};
 var ytIdVideo = "";
 
+
 // Load the YouTube API. For some reason it's required to load it like this
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -9,6 +10,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 $(document).ready(function() {
+
+   var headerHeight = $("header").innerHeight();
+   // Scroll raton
+   $( "#scroll-raton" ).click(function(e) {
+     e.preventDefault();
+     $('html,body').animate({scrollTop: $('#modulo-2').position().top - (headerHeight -1) }, 750);
+   });
 
    // Footer at Bottom
    var docHeight = $(window).height();
@@ -94,7 +102,6 @@ $(document).ready(function() {
                 });
             }
         }
-
     });
 
     /* ALTERAR ORDEN DIV */
