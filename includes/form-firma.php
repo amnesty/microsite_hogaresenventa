@@ -150,8 +150,8 @@
         </label>
     </div>
 
-    <button id="btnEnviar" type="submit" class="btn btn-enviar orange-white">Envía tu firma</button>
-    <button id="btnEnviando" type="button" class="btn btn-enviar" style="display:none;">Enviando...</button>
+    <button id="btnEnviar_<?=$id_formulario?>" type="submit" class="btn btn-enviar orange-white">Envía tu firma</button>
+    <button id="btnEnviando_<?=$id_formulario?>" type="button" class="btn btn-enviar" style="display:none;">Enviando...</button>
 
     <input type="hidden" name="guardar_form" value="1">
     <input type="hidden" name="origen" value="<?php echo($origen); ?>">

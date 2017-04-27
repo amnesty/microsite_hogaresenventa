@@ -254,8 +254,8 @@ function validarFormFirma(f) {
         return false;
     }else{
 
-        $('#btnEnviar').css('display', 'none');
-        $('#btnEnviando').css('display', 'block');
+        $('#btnEnviar_'+id_form).css('display', 'none');
+        $('#btnEnviando_'+id_form).css('display', 'block');
 
         return true;
     }
