@@ -261,6 +261,7 @@ if($_GET['error_form'] == 1){
 		_paq.push(["trackGoal", 33]);
 		if (nuevoFirmante==2) {
 	   	_paq.push(["trackGoal", 8]);
+	   	_paq.push(["trackGoal", 52]);
 		}
 	  (function() {
 	    var u="//estadisticas.es.amnesty.org/piwik/";
