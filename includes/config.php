@@ -24,13 +24,22 @@ define ("TRACK_FB_UTM", "?utm_source=facebook&utm_campaign=comp&utm_medium=socia
 define ("TRACK_TW_UTM", "?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter");
 define ("TRACK_WH_UTM", "?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp");
 
+//Se usa para calcular el % de firmas para rellenar la "Progress Bar" en "/includes/firma-form.php"
+//En <div class="progress-wrap-firmas progress-firmas" data-progress-percent="20">
+//EL valor de "data-progress-percent" (0-100) hará que se rellena la progress bar con el valor indicado
+
+//Para calcular el valor, es necesario sabnerl el nº de firmas que se llevan en cada momento, meidante una consulta SQL a la base de datos.
+//Luego se calucla esto: data-progress-percent =   (nº firmas / NUM_FIRMAS_TOTAL )*100
+define ("NUM_FIRMAS_TOTAL", "5000");
+
 
 /* Short URL Twitter */
 // https://www.es.amnesty.org/hogaresenventa/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
-define ("SL_HOME_TW", "https://goo.gl/rRLg9I"); 
+define ("SL_HOME_TW", "https://goo.gl/rRLg9I");
 
-// https://www.es.amnesty.org/hogaresenventa/elena/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
-define ("SL_ELENA_TW", "https://goo.gl/VbMYEe");
+// https://www.es.amnesty.org/hogaresenventa/paula/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter 
+// FIX ElENA por PAULA, pero no cambio el nombre de variable
+define ("SL_ELENA_TW", "https://goo.gl/UzYkw8");
 
 // https://www.es.amnesty.org/hogaresenventa/lucia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
 define ("SL_LUCIA_TW", "https://goo.gl/HjFZ94");
@@ -40,8 +49,9 @@ define ("SL_LUCIA_TW", "https://goo.gl/HjFZ94");
 // https://www.es.amnesty.org/hogaresenventa/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
 define ("SL_HOME_WH", "https://goo.gl/NYkJZV");
 
-// https://www.es.amnesty.org/hogaresenventa/elena/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
-define ("SL_ELENA_WH", "https://goo.gl/7Tv7t7");
+// https://www.es.amnesty.org/hogaresenventa/paula/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
+// FIX ElENA por PAULA, pero no cambio el nombre de variable
+define ("SL_ELENA_WH", "https://goo.gl/MFMvr8");
 
 // https://www.es.amnesty.org/hogaresenventa/lucia/?utm_source=whatsapp&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-whatsapp
 define ("SL_LUCIA_WH", "https://goo.gl/pk1Ozp");

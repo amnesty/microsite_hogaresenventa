@@ -26,7 +26,7 @@ include_once ("includes/config.php");
     <meta property="og:title" content="El Derecho a la Vivienda #NoSeVende" />
     <meta property="og:description" content="Entre 2011 y 2013 se vendieron en Madrid viviendas sociales habitadas a fondos de inversión. Firma para que ninguna familia pierda su hogar." />
     <meta property="og:site_name" content="Amnistía Internacional" />
-    <meta property="og:image" content="<?php echo URL_SITE; ?>images/compartir-fb.png" />
+    <meta property="og:image" content="<?php echo URL_SITE; ?>images/compartir-fb.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -171,7 +171,7 @@ var google_remarketing_only = false;
 				<ul class="clearfix">
 					<li><b>Comparte:</b></li>
 					<li><a data-e_c="hogaresenventa" data-e_a="gracias comp TW" data-e_l="gracias comp TW" data-shareurl="<?php echo SL_HOME_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="fa fa-twitter twitter-share send-piwik-event" title="Compartir en Twitter" href="#"></a></li>
-					<li><a data-e_c="hogaresenventa" data-e_a="gracias comp FB" data-e_l="gracias comp FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El Derecho a la Vivienda #NoSeVende" data-texto="Entre 2011 y 2013 se vendieron en Madrid viviendas sociales habitadas a fondos de inversión. Firma para que ninguna familia pierda su hogar." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
+					<li><a data-e_c="hogaresenventa" data-e_a="gracias comp FB" data-e_l="gracias comp FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El Derecho a la Vivienda #NoSeVende" data-texto="Entre 2011 y 2013 se vendieron en Madrid viviendas sociales habitadas a fondos de inversión. Firma para que ninguna familia pierda su hogar." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.jpg" data-caption="Amnistía Internacional" class="fa fa-facebook facebook-share send-piwik-event" href="#" title="Compartir en Facebook"></a></li>
 <?php
 if($isMobile) {
 ?>
@@ -221,7 +221,7 @@ if($_GET['error_form'] == 1){
 
 								<a data-e_c="hogaresenventa" data-e_a="gracias comp TW" data-e_l="gracias comp TW" data-shareurl="<?php echo SL_HOME_TW; ?>" data-texto="El derecho a la vivienda #NoSeVende. Firma para que ninguna familia pierda su hogar" class="btn-big-general white-orange twitter-share send-piwik-event" title="Compartir en Twitter" href="#"><b>Compartir en Twitter</b></a>
 
-								<a data-e_c="hogaresenventa" data-e_a="gracias comp FB" data-e_l="gracias comp FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El Derecho a la Vivienda #NoSeVende" data-texto="Entre 2011 y 2013 se vendieron en Madrid viviendas sociales habitadas a fondos de inversión. Firma para que ninguna familia pierda su hogar." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.png" data-caption="Amnistía Internacional" class="btn-big-general white-orange facebook-share send-piwik-event" href="#" title="Compartir en Facebook"><b>Compartir en Facebook</b></a>
+								<a data-e_c="hogaresenventa" data-e_a="gracias comp FB" data-e_l="gracias comp FB" data-shareurl="<?php echo URL_SITE . TRACK_FB_UTM; ?>" data-title="El Derecho a la Vivienda #NoSeVende" data-texto="Entre 2011 y 2013 se vendieron en Madrid viviendas sociales habitadas a fondos de inversión. Firma para que ninguna familia pierda su hogar." data-imagen="<?php echo URL_SITE; ?>images/compartir-fb.jpg" data-caption="Amnistía Internacional" class="btn-big-general white-orange facebook-share send-piwik-event" href="#" title="Compartir en Facebook"><b>Compartir en Facebook</b></a>
 
 
 <?php

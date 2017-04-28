@@ -108,7 +108,7 @@ if($isMobile) {
             </button>
 
             <div class="video-container">
-                <div id="video" data-ytidvideo="ZCvw_H65KHs"></div>
+                <div id="video" data-ytidvideo="FW_h3kG9mi4"></div>
             </div>
 
           </div>
@@ -152,11 +152,7 @@ if($isMobile) {
 
 	<section class="modulo-1-firma ancla-firma">
 
-		 <a id="scroll-raton" href="#modulo-2"><div class="scroll-downs-raton">
-		  <div class="mousey-raton">
-		   <div class="scroller-raton"></div>
-		  </div>
-		</div></a>
+		 
 
 		<div class="container">
 			<div class="row">
@@ -173,8 +169,7 @@ if($isMobile) {
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>El Derecho a la vivienda #NoSeVende</h1>
-							<p>Firma <a data-e_c="hogaresenventa" data-e_a="home petición" data-e_l="home petición" href="#" class="send-piwik-event" title="Firma esta petición" data-toggle="modal" data-target="#modal-peticion"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
-
+							<p>Firma <a data-e_c="hogaresenventa" data-e_a="home petición" data-e_l="home petición" href="#" class="send-piwik-event" title="Firma esta petición" data-toggle="modal" data-target="#modal-peticion"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>			
 <?php
 $id_formulario = "formFirma";
 include ('includes/form-firma.php');
@@ -185,6 +180,14 @@ include ('includes/form-firma.php');
 			</div><!-- /row -->
 		</div>
 
+		<a id="scroll-raton" href="#modulo-2">
+			<div class="scroll-downs-raton">
+				<div class="mousey-raton">
+					<div class="scroller-raton"></div>
+				</div>
+			</div>
+		</a>
+
 	</section>
 
 	<section id="modulo-2" class="modulo-2-su-derecho">
@@ -194,10 +197,10 @@ include ('includes/form-firma.php');
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>Su derecho #NoSeVende</h1>
-							<p>Elena y sus tres hijos vivían en una vivienda social hasta que la Comunidad de Madrid la vendió a un fondo de inversión sin contar con ella. Cuando pidió ayuda, las autoridades se desentendieron porque la vivienda había dejado de ser pública. <br/>Finalmente, acabó perdiendo su vivienda.<p>
-							<p>Elena tiene derecho a una vivienda digna.</p>
+							<p>Paula y sus tres hijos vivían en una vivienda social hasta que la Comunidad de Madrid la vendió a un fondo de inversión sin contar con ella. Cuando pidió ayuda, las autoridades se desentendieron porque la vivienda había dejado de ser pública. <br/>Finalmente, acabó perdiendo su vivienda.<p>
+							<p>Paula tiene derecho a una vivienda digna.</p>
 							<div class="botones">
-								<a class="btn-big-general orange-white" href="elena/"><b>Firma por Elena</b></a>
+								<a class="btn-big-general orange-white" href="paula/"><b>Firma por Paula</b></a>
 							</div>
 							<br/>
 							<p>Lucía y su hija de 7 años viven en una vivienda social desde 2012. Un día escuchó por el barrio que la Comunidad de Madrid había vendido su casa a un fondo de inversión. Los rumores eran ciertos. La reducción del alquiler que le concedieron por su incapacidad total se esfumó porque su vivienda ya no era pública.</p>
@@ -210,7 +213,7 @@ include ('includes/form-firma.php');
 				</div>
 
 				<div class="div2-2 content-img col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<img src="images/modulo-2-su-derecho.jpg" alt="Su derecho no se vende. Firma por Elena">
+					<img src="images/modulo-2-su-derecho-v2.jpg" alt="Su derecho no se vende. Firma por Paula">
 				</div>
 			</div><!-- /row -->
 		</div>
@@ -227,7 +230,7 @@ include ('includes/form-firma.php');
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>Colabora con la campaña</h1>
-							<p>¡Usemos nuestra casa para defender nuestro derecho a la vivienda! Haz un donativo y recibirás en tu casa un cartel o una pegatina como la de la imagen para que lo coloques donde quieras. Tú eliges el formato y el idioma. Podrás difundir la campaña y mostrar tu apoyo a familias como la de Elena.</p>
+							<p>¡Usemos nuestra casa para defender nuestro derecho a la vivienda! Haz un donativo y recibirás en tu casa un cartel o una pegatina como la de la imagen para que lo coloques donde quieras. Tú eliges el formato y el idioma. Podrás difundir la campaña y mostrar tu apoyo a familias como la de Paula.</p>
 
 							<a data-e_c="hogaresenventa" data-e_a="home boton haz donativo" data-e_l="home boton haz donativo" target="_blank" class="btn-big-haz-un-donativo orange-white send-piwik-event" href="<?php echo URL_DONA; ?>"><b>Haz un donativo</b></a>
 

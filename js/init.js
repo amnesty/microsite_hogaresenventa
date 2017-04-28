@@ -11,12 +11,59 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function() {
 
+   $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+
+        if (scroll > 2) {
+            //$( "#scroll-raton" ).css('display', 'none');
+
+            $( "#scroll-raton" ).fadeOut(200);
+
+
+        }else{
+             //$( "#scroll-raton" ).css('display', 'block');   
+             $( "#scroll-raton" ).fadeIn(200);
+        };
+
+
+
+    });
+
    var headerHeight = $("header").innerHeight();
    // Scroll raton
    $( "#scroll-raton" ).click(function(e) {
      e.preventDefault();
      $('html,body').animate({scrollTop: $('#modulo-2').position().top - (headerHeight -1) }, 750);
    });
+
+   // on page load...
+    moveProgressBar();
+    // on browser resize...
+
+    $(window).resize(function() {
+        moveProgressBar();
+    });
+
+
+   // Barra de firmas
+    function moveProgressBar() {
+        var getPercent = ($('.progress-wrap-firmas').data('progress-percent') / 100);
+        var getProgressWrapWidth = $('.progress-wrap-firmas.formFirma').width();
+        var getProgressWrapWidthMobile = $('.progress-wrap-firmas.formFirmaMobile').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        var progressTotalMobile = getPercent * getProgressWrapWidthMobile;
+        var animationLength = 2500;
+
+        // on page load, animate percentage bar to data percentage length
+        // .stop() used to prevent animation queueing
+        $('.progress-bar-firmas.formFirma').stop().animate({
+            left: progressTotal
+        }, animationLength);
+
+        $('.progress-bar-firmas.formFirmaMobile').stop().animate({
+            left: progressTotalMobile
+        }, animationLength);
+    }
 
    // Footer at Bottom
    var docHeight = $(window).height();
