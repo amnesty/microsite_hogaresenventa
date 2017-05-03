@@ -13,6 +13,8 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 	define("URL_SITE",     "http://dev.amnistia.bit/hogaresenventa/"); // Servidor Local estrés
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" ) ) {
 	define("URL_SITE",     "http://testing.estresarte.com/amnistia/hogaresenventa/"); // Producción estrés
+} elseif ( strpos ( $_SERVER['SERVER_NAME'], "localhost" ) ) {
+	define("URL_SITE",     "http://localhost:8088/hogaresenventa/"); // Local amnistia
 } else {
 	define("URL_SITE",     "https://www.es.amnesty.org/hogaresenventa/"); // Producción Amnistía
 }
