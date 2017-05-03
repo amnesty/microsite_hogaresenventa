@@ -28,7 +28,7 @@
 
     include_once('connect.php');
     $query =  "SELECT COUNT(*) AS contador FROM test_firmas"; // TEST
-    //$query =  "SELECT COUNT(*) AS contador FROM firmas WHERE accion = 'hogaresenventa'"; //PROD
+    //$query =  "SELECT COUNT(*) AS contador FROM firmas WHERE accion = 'espana_may17'"; //PROD
     $result = mysqli_query( $id_connect, $query );
     $obj = mysqli_fetch_object($result);
     $num_firmas = $obj->contador;

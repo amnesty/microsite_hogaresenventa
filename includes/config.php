@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+
 /***********************
 *     CONSTANTES       *
 ***********************/
@@ -37,7 +40,7 @@ define ("NUM_FIRMAS_TOTAL", "5000");
 // https://www.es.amnesty.org/hogaresenventa/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
 define ("SL_HOME_TW", "https://goo.gl/rRLg9I");
 
-// https://www.es.amnesty.org/hogaresenventa/paula/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter 
+// https://www.es.amnesty.org/hogaresenventa/paula/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=living%20in%20dignity&utm_content=Web_petition-hogaresenventa-twitter
 // FIX ElENA por PAULA, pero no cambio el nombre de variable
 define ("SL_ELENA_TW", "https://goo.gl/UzYkw8");
 
