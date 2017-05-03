@@ -15,8 +15,8 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 }
 
 //Links to CRM Amnistía
-define("URL_SOCIO", "https://crm.es.amnesty.org/unete-no-se-vende/");
-define("URL_DONA", "https://crm.es.amnesty.org/donacion-no-se-vende/");
+define("URL_SOCIO", "https://crm.es.amnesty.org/unete-no-se-vende/?origen=hogaresenventa");
+define("URL_DONA", "https://crm.es.amnesty.org/donacion-no-se-vende/?origen=hogaresenventa");
 
 
 //Trackeado de enlaces con UTM de Google Analytics
