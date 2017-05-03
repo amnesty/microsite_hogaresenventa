@@ -13,20 +13,11 @@ $(document).ready(function() {
 
    $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-
         if (scroll > 2) {
-            //$( "#scroll-raton" ).css('display', 'none');
-
             $( "#scroll-raton" ).fadeOut(200);
-
-
         }else{
-             //$( "#scroll-raton" ).css('display', 'block');   
              $( "#scroll-raton" ).fadeIn(200);
         };
-
-
-
     });
 
    var headerHeight = $("header").innerHeight();

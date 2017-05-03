@@ -183,7 +183,7 @@ include ('includes/form-firma.php');
 		<a id="scroll-raton" href="#modulo-2">
 			<div class="scroll-downs-raton">
 				<div class="mousey-raton">
-					<div class="scroller-raton"></div>
+					<div class="scroller-raton">↓</div>
 				</div>
 			</div>
 		</a>
