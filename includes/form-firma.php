@@ -14,7 +14,7 @@
 ?>
 
 <?php
-
+    include_once('config.php');
     $num_firmas_total = NUM_FIRMAS_TOTAL; // config.php -> Se puede modificar bajo demanda. Establecido a 5000
 
 /*
@@ -27,12 +27,11 @@
     // contar de la tabla
 
     include_once('connect.php');
-    $query =  "SELECT COUNT(*) AS contador FROM test_firmas"; // TEST
+    $query =  "SELECT COUNT(*) AS contador FROM test_firmas WHERE accion = 'espana_may17'"; // TEST
     //$query =  "SELECT COUNT(*) AS contador FROM firmas WHERE accion = 'espana_may17'"; //PROD
     $result = mysqli_query( $id_connect, $query );
     $obj = mysqli_fetch_object($result);
     $num_firmas = $obj->contador;
-    mysqli_close($id_connect);
 
     //Calculo del porcentajo de firmas que llevamos:
     $progress_percent = (($num_firmas) / $num_firmas_total)*100;
@@ -41,7 +40,6 @@
     //PRUEBAS
     $num_firmas = 100;
     $progress_percent = 75;
-
 */
 
 ?>
