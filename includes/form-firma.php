@@ -14,31 +14,35 @@
 ?>
 
 <?php
-/*
+
     $num_firmas_total = NUM_FIRMAS_TOTAL; // config.php -> Se puede modificar bajo demanda. Establecido a 5000
-    $num_firmas = "";
-    $num_firmas_bd_bak = "83252"; //Numeros de firmas de la tabla backup
+
+/*
     //Guardar en esta variable "$num_firmas" el nº de firmas actualziado que se lleva para esta campaña.
     //Se puede hacer de diferentes formas:
     //Una consulta a BBDD (realizando una conexión previa) para saber el nº firmas que llevamos, Ejemplo SQL:
-    $num_firmas = SELECT COUNT("firma_ID") FROM "table_firmas";
-
+    //$num_firmas = SELECT COUNT("firma_ID") FROM "table_firmas";
+*/
 
     // contar de la tabla
 
     include_once('connect.php');
-    $query =  "SELECT COUNT(*) AS contador FROM datos_firmas";
+    $query =  "SELECT COUNT(*) AS contador FROM test_firmas"; // TEST
+    //$query =  "SELECT COUNT(*) AS contador FROM firmas WHERE accion = 'hogaresenventa'"; //PROD
     $result = mysqli_query( $id_connect, $query );
     $obj = mysqli_fetch_object($result);
     $num_firmas = $obj->contador;
     mysqli_close($id_connect);
 
     //Calculo del porcentajo de firmas que llevamos:
-    $progress_percent = (($num_firmas_bd_bak+$num_firmas) / $num_firmas_total)*100;
-*/
+    $progress_percent = (($num_firmas) / $num_firmas_total)*100;
+
+/*
     //PRUEBAS
     $num_firmas = 100;
     $progress_percent = 75;
+
+*/
 
 ?>
 
