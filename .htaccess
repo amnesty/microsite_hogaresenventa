@@ -1,10 +1,10 @@
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-AddOutputFilterByType DEFLATE image/x-icon 
-AddOutputFilterByType DEFLATE image/gif    
-AddOutputFilterByType DEFLATE image/png    
-AddOutputFilterByType DEFLATE image/jpeg 
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE image/gif
+AddOutputFilterByType DEFLATE image/png
+AddOutputFilterByType DEFLATE image/jpeg
 </ifmodule>
 # END GZIP
 
@@ -30,8 +30,8 @@ RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 
 
 # Add trailing slash
-RewriteCond %{REQUEST_URI} !(/$|\.) 
-RewriteRule (.*) %{REQUEST_URI}/ [R=301,L] 
+RewriteCond %{REQUEST_URI} !(/$|\.)
+RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
 
 # Permite que los archivos o directorios que existen sean mostrados directamente
 RewriteCond %{REQUEST_FILENAME} !-d
