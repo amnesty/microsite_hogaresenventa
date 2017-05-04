@@ -276,7 +276,11 @@ include ('includes/form-firma.php');
 	</div>
 
 	<!-- Footer -->
-    <?php include "includes/footer.php";?>
+
+    <?php
+    	$no_incluir_piwik = false; 
+    	include "includes/footer.php";
+    ?>
 
     <!-- cookies  -->
     <?php include "includes/cookies.php";?>
