@@ -7,13 +7,15 @@ ini_set('display_startup_errors', 1);
 /***********************
 *     CONSTANTES       *
 ***********************/
-
+//echo $_SERVER['SERVER_NAME'];
+var_dump( $_SERVER['SERVER_NAME'] == "localhost" );
 //ESTABLECE LA URL DEL SITE para construir las URLs y usarlas en Redes Sociales y Meta Etiquetas
 if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 	define("URL_SITE",     "http://dev.amnistia.bit/hogaresenventa/"); // Servidor Local estrés
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" ) ) {
 	define("URL_SITE",     "http://testing.estresarte.com/amnistia/hogaresenventa/"); // Producción estrés
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "localhost" ) ) {
+	echo "0";
 	define("URL_SITE",     "http://localhost:8088/hogaresenventa/"); // Local amnistia
 } else {
 	define("URL_SITE",     "https://www.es.amnesty.org/hogaresenventa/"); // Producción Amnistía
@@ -35,7 +37,7 @@ define ("TRACK_WH_UTM", "?utm_source=whatsapp&utm_campaign=comp&utm_medium=socia
 
 //Para calcular el valor, es necesario sabnerl el nº de firmas que se llevan en cada momento, meidante una consulta SQL a la base de datos.
 //Luego se calucla esto: data-progress-percent =   (nº firmas / NUM_FIRMAS_TOTAL )*100
-define ("NUM_FIRMAS_TOTAL", "5000");
+define ("NUM_FIRMAS_TOTAL", "10000");
 
 
 /* Short URL Twitter */

@@ -22,7 +22,7 @@ php_value default_charset UTF-8
 #RewriteBase /amnistia/hogaresenventa/
 
 #Servidor Amnisita
-RewriteBase /hogaresenventa/
+#RewriteBase /hogaresenventa/
 
 
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
