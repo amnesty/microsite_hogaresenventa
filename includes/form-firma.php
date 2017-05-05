@@ -28,7 +28,7 @@
 
     include_once('connect.php');
     //$query =  "SELECT COUNT(*) AS contador FROM test_firmas WHERE accion = 'espana_may17'"; // TEST
-    $query =  "SELECT COUNT(*) AS contador FROM firmas WHERE accion = 'espana_may17'"; //PROD
+    $query =  "SELECT COUNT(*) AS contador FROM $tabla WHERE accion = 'espana_may17'"; //PROD
     $result = mysqli_query( $id_connect, $query );
     $obj = mysqli_fetch_object($result);
     $num_firmas = $obj->contador;
@@ -193,5 +193,6 @@
     <input type="hidden" name="guardar_form" value="1">
     <input type="hidden" name="origen" value="<?php echo($origen); ?>">
     <input type="hidden" name="campanya" value="<?php echo($campaign); ?>">
+    <input type="hidden" name="caso" value="<?php echo $caso; ?>">
 
 </form>
