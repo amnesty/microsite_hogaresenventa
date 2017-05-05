@@ -100,6 +100,7 @@ if($isMobile) {
 	</script>
 
 <?php
+
 //Tienen activa la cookie de aceptar cookies: cookieAlert3 = "1"
 if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
 
@@ -155,7 +156,30 @@ var google_remarketing_only = false;
 
 <?php
     }
-}
+
+     //VIENE DE FACEBOOK
+    if($_SESSION['pk_campaign'] == 'anunfbk' || $_SESSION['utm_campaign'] == 'anunfbk' || $_SESSION['utm_source'] == 'FBPAGE' || $_SESSION['utm_source'] == 'fbpage') {
+?>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1076898019072470');
+    fbq('track', "PageView");
+    fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1076898019072470&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+<?php
+    }
+
+
+} //<!--. if cookieAlert3
 ?>
 
 </head>
@@ -246,7 +270,36 @@ if($_GET['error_form'] == 1){
 
 	</section>
 
-	<!-- Piwik -->
+
+<?php
+if($_GET['error_form'] == 1){
+?>
+<!-- Piwik -->
+	<script type="text/javascript">
+		var nuevoFirmante = <?=$_GET['s'] ? $_GET['s']:"''"; ?>;
+		//alert(nuevoFirmante);
+	  var _paq = _paq || [];
+	  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+	  _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
+	  _paq.push(["setDomains", ["*.es.amnesty.org",]]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  
+	  (function() {
+	    var u="//estadisticas.es.amnesty.org/piwik/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', '1']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+
+<?php
+} else {
+?>
+<!-- Piwik -->
 	<script type="text/javascript">
 		var nuevoFirmante = <?=$_GET['s'] ? $_GET['s']:"''"; ?>;
 		//alert(nuevoFirmante);
@@ -274,7 +327,9 @@ if($_GET['error_form'] == 1){
 	<noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 	<!-- End Piwik Code -->
 
-
+<?php
+}
+?>
 	<!-- Botón firma Mobile  -->
 	<!--<div class="boton-fixed-firma">
 		<a data-e_c="hogaresenventa" data-e_a="gracias boton footer firma" data-e_l="gracias boton footer firma" class="btn-big-general firma send-piwik-event" href="<?php echo URL_SITE ?>"><b>Firma</b></a>
