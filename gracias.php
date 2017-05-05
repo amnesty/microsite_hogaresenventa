@@ -246,7 +246,36 @@ if($_GET['error_form'] == 1){
 
 	</section>
 
-	<!-- Piwik -->
+
+<?php
+if($_GET['error_form'] == 1){
+?>
+<!-- Piwik -->
+	<script type="text/javascript">
+		var nuevoFirmante = <?=$_GET['s'] ? $_GET['s']:"''"; ?>;
+		//alert(nuevoFirmante);
+	  var _paq = _paq || [];
+	  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+	  _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
+	  _paq.push(["setDomains", ["*.es.amnesty.org",]]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+		}
+	  (function() {
+	    var u="//estadisticas.es.amnesty.org/piwik/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', '1']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+
+<?php
+} else {
+?>
+<!-- Piwik -->
 	<script type="text/javascript">
 		var nuevoFirmante = <?=$_GET['s'] ? $_GET['s']:"''"; ?>;
 		//alert(nuevoFirmante);
@@ -274,7 +303,9 @@ if($_GET['error_form'] == 1){
 	<noscript><p><img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 	<!-- End Piwik Code -->
 
-
+<?php
+}
+?>
 	<!-- Botón firma Mobile  -->
 	<!--<div class="boton-fixed-firma">
 		<a data-e_c="hogaresenventa" data-e_a="gracias boton footer firma" data-e_l="gracias boton footer firma" class="btn-big-general firma send-piwik-event" href="<?php echo URL_SITE ?>"><b>Firma</b></a>
