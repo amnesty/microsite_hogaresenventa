@@ -260,7 +260,7 @@ if($_GET['error_form'] == 1){
 	  _paq.push(["setDomains", ["*.es.amnesty.org",]]);
 	  _paq.push(['trackPageView']);
 	  _paq.push(['enableLinkTracking']);
-		}
+	  
 	  (function() {
 	    var u="//estadisticas.es.amnesty.org/piwik/";
 	    _paq.push(['setTrackerUrl', u+'piwik.php']);
