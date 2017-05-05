@@ -122,13 +122,13 @@ if($_POST['guardar_form']) {
 		fclose($myfile);*/
 
 		if($caso){
-			header("location: ../gracias?s=".$socio."&c=".$caso);
+			header("location: ../gracias/?s=".$socio."&c=".$caso);
 		} else {
-			header("location: ../gracias?s=".$socio);
+			header("location: ../gracias/?s=".$socio);
 		}
 
 	} catch(Exception $e) {
-		header("location: ../gracias?error_form=1");
+		header("location: ../gracias/?error_form=1");
 	}
 
 }
