@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
 
 /***********************
 *     CONSTANTES       *
@@ -11,12 +11,16 @@ ini_set('display_startup_errors', 1);
 //ESTABLECE LA URL DEL SITE para construir las URLs y usarlas en Redes Sociales y Meta Etiquetas
 if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 	define("URL_SITE",     "http://dev.amnistia.bit/hogaresenventa/"); // Servidor Local estrés
+	$tabla = ""; // definir tabla de prueba para simular el insert
 } elseif ( strpos ( $_SERVER['SERVER_NAME'], "estresarte.com" ) ) {
 	define("URL_SITE",     "http://testing.estresarte.com/amnistia/hogaresenventa/"); // Producción estrés
-} elseif ( strpos ( $_SERVER['SERVER_NAME'], "localhost" ) ) {
+	$table = ""; // definir tabla de prueba para simular el insert
+} elseif ( $_SERVER['SERVER_NAME'] == "localhost" ) {
 	define("URL_SITE",     "http://localhost:8088/hogaresenventa/"); // Local amnistia
+	$tabla = "test_firmas";
 } else {
 	define("URL_SITE",     "https://www.es.amnesty.org/hogaresenventa/"); // Producción Amnistía
+	$tabla = "firmas";
 }
 
 //Links to CRM Amnistía
