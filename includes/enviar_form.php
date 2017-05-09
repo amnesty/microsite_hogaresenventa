@@ -99,7 +99,7 @@ if($_POST['guardar_form']) {
 					'',
 					'".$ip."',
 					'".$origen.":".$campanya."',
-					'',
+					'".$origen.":".$campanya."',
 					'0',
 					'0',
 					CURRENT_TIMESTAMP,
