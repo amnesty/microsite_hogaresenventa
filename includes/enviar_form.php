@@ -34,11 +34,14 @@ if($_POST['guardar_form']) {
 		$masinfo = 0;
 	}
 	// País
-	$query_pais = "SELECT nombre FROM paises WHERE id_mp=".$pais_id;
+	$query_pais = "SELECT ISO_Country_es AS nombre, IdWeb AS siglas FROM correos.countries WHERE IdMailSolutions=".$pais_id;
 	$result = mysqli_query( $id_connect, $query_pais ); //or die( 'Error: ' . mysqli_connect_errno() );
 	$pais = $result->fetch_array(MYSQLI_ASSOC);
-	$pais_def = $pais["nombre"];
+	$pais_nombre = $pais["nombre"];
+	$pais_siglas = $pais["siglas"];
 	$caso = $_POST['caso'];
+
+	var_dump($pais);
 
 	// Guardar en BD
 	try {
@@ -86,7 +89,7 @@ if($_POST['guardar_form']) {
 					'',
 					'',
 					'',
-					'".$pais_def."',
+					'".$pais_nombre."',
 					'".$email."',
 					'".$telefono."',
 					'',
@@ -103,7 +106,7 @@ if($_POST['guardar_form']) {
 					'0',
 					'0',
 					CURRENT_TIMESTAMP,
-					NULL,
+					'".$pais_siglas."',
 					NULL,
 					'0',
 					'0',
@@ -122,9 +125,9 @@ if($_POST['guardar_form']) {
 		fclose($myfile);*/
 
 		if($caso){
-			header("location: ../gracias/?s=".$socio."&c=".$caso);
+			//header("location: ../gracias/?s=".$socio."&c=".$caso);
 		} else {
-			header("location: ../gracias/?s=".$socio);
+			//header("location: ../gracias/?s=".$socio);
 		}
 
 	} catch(Exception $e) {
