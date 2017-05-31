@@ -41,8 +41,6 @@ if($_POST['guardar_form']) {
 	$pais_siglas = $pais["siglas"];
 	$caso = $_POST['caso'];
 
-	var_dump($pais);
-
 	// Guardar en BD
 	try {
 		//nuev@s interesad@s
@@ -125,9 +123,9 @@ if($_POST['guardar_form']) {
 		fclose($myfile);*/
 
 		if($caso){
-			//header("location: ../gracias/?s=".$socio."&c=".$caso);
+			header("location: ../gracias/?s=".$socio."&c=".$caso);
 		} else {
-			//header("location: ../gracias/?s=".$socio);
+			header("location: ../gracias/?s=".$socio);
 		}
 
 	} catch(Exception $e) {
