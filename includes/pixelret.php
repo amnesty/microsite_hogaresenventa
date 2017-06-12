@@ -43,5 +43,18 @@ if (isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1) {
 	</noscript>
 <?php
 	}
+	//VIENE DE TWITTER
+	if(isset($_SESSION['pk_campaign']) || $_SESSION['pk_campaign'] == 'anuntwtt ' || isset($_SESSION['utm_campaign']) || $_SESSION['utm_campaign'] == 'anuntwtt ') {
+?>
+	<!-- Twitter single-event website tag code -->
+	<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+	<script type="text/javascript">twttr.conversion.trackPid('nxiyc', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+	<noscript>
+	<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nxiyc&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+	<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nxiyc&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+	</noscript>
+	<!-- End Twitter single-event website tag code -->
+<?php
+	}
 }
 ?>
