@@ -197,23 +197,23 @@ include ('includes/form-firma.php');
 					<div class="row middle center">
 						<div class="col-12">
 							<h1>Su derecho #NoSeVende</h1>
-							<p>Paula y sus tres hijos vivían en una vivienda social hasta que la Comunidad de Madrid la vendió a un fondo de inversión sin contar con ella. Cuando pidió ayuda, las autoridades se desentendieron porque la vivienda había dejado de ser pública. <br/>Finalmente, acabó perdiendo su vivienda.<p>
+							<?php /*<!--<p>Paula y sus tres hijos vivían en una vivienda social hasta que la Comunidad de Madrid la vendió a un fondo de inversión sin contar con ella. Cuando pidió ayuda, las autoridades se desentendieron porque la vivienda había dejado de ser pública. <br/>Finalmente, acabó perdiendo su vivienda.<p>
 							<p>Paula tiene derecho a una vivienda digna.</p>
 							<div class="botones">
 								<a data-e_c="hogaresenventa" data-e_a="home boton firma_por_Paula" data-e_l="home boton firma_por_Paula" class="btn-big-general orange-white send-piwik-event" href="paula/"><b>Firma por Paula</b></a>
 							</div>
-							<br/>
+							<br/>--> */ ?>
 							<p>Lucía y su hija de 7 años viven en una vivienda social desde 2012. Un día escuchó por el barrio que la Comunidad de Madrid había vendido su casa a un fondo de inversión. Los rumores eran ciertos. La reducción del alquiler que le concedieron por su incapacidad total se esfumó porque su vivienda ya no era pública.</p>
 							<p>Lucía y su hija podrían quedarse en la calle.<p>
 							<div class="botones">
-								<a data-e_c="hogaresenventa" data-e_a="home boton firma_por_Lucía" data-e_l="home boton firma_por_Lucía" class="btn-big-general white-orange send-piwik-event" href="lucia/"><b>Firma por Lucía</b></a>
+								<a data-e_c="hogaresenventa" data-e_a="home boton firma_por_Lucía" data-e_l="home boton firma_por_Lucía" class="btn-big-general orange-white send-piwik-event" href="lucia/"><b>Firma por Lucía</b></a>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="div2-2 content-img col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<img src="images/modulo-2-su-derecho-v2.jpg" alt="Su derecho no se vende. Firma por Paula">
+					<img src="images/modulo-2-su-derecho-v3.jpg" alt="Su derecho no se vende. Firma por Paula">
 				</div>
 			</div><!-- /row -->
 		</div>
