@@ -4,8 +4,6 @@
 ********************* Conexión y llamadas a API Experian e interna *******************
 *************************************************************************************/
 
-
-
 /******************* Llamadas CURL *****************************/
 function ai_curl($url){
 
@@ -13,7 +11,7 @@ function ai_curl($url){
     curl_setopt_array($curl, array(
         CURLOPT_URL => $url,
         CURLOPT_HTTPHEADER => array(
-          'Authorization: testdf8as7d'
+          'Authorization: '.TOKEN.''
         ),
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
@@ -43,7 +41,7 @@ function ai_curl_post($url, $data){
         CURLOPT_POSTFIELDS => $data,
         CURLOPT_HTTPHEADER => array(
           "content-type: application/json",
-          'Authorization: testdf8as7d'
+          'Authorization: '.TOKEN.''
         ),
     ));
     $response = curl_exec($curl);
@@ -131,23 +129,25 @@ function es_interesado($email) {
 
 function get_member_by_email($email) {
 
-    $url = "http://192.168.100.35:8180/api/members/?email=".$email;
+    $url = "http://".IP.":".PORT."/api/members/?email=".$email;
     $res = ai_curl($url);
     return $res["results"];
 }
 
 function get_product_by_productcode($productcode){
 
-    $url = "http://192.168.100.35:8180/api/products?productcode=".$productcode;
+    $url = "http://".IP.":".PORT."/api/products?productcode=".$productcode;
     $res = ai_curl($url);
     return $res["results"];
 }
 
 function get_purchase_by_member_product($product_id, $member_id){
 
-    $url = "http://192.168.100.35:8180/api/purchases/?product_id=".$product_id."&member_id=".$member_id;
+    $url = "http://".IP.":".PORT."/api/purchases/?product_id=".$product_id."&member_id=".$member_id;
+    echo $url;
     $res = ai_curl($url);
-    return $res;
+    var_dump($res);
+    return $res["results"];
 }
 
 function get_fecha(){
@@ -184,7 +184,7 @@ function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $p
         "synchro_update" : "'.get_fecha().'"
      }';
 
-    $url = "http://192.168.100.35:8180/api/members/";
+    $url = "http://".IP.":".PORT."/api/members/";
     $res = ai_curl_post($url, $data);
     return $res;
 }
@@ -202,44 +202,12 @@ function post_purchase_ai($member_id, $product_id) {
        "product": '.$product_id.'
      }';
 
-    $url = "http://192.168.100.35:8180/api/purchases/";
+    $url = "http://".IP.":".PORT."/api/purchases/";
     $res = ai_curl_post($url, $data);
     return $res;
 }
 
-function post_member_experian($member_id, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre){
-
-  $url =  "https://api.ccmp.eu/services2/api/Campaign/{ID}/Trigger";
-  $data = '{
-    "_data": {
-    	"recipient":[
-    	 {
-    		"members_id": "javier.lobo@experian.com",
-    		"firstname": "Javier",
-    		"email": "javier.lobo@experian.com",
-    		"purchase.purchase_to_members":[
-    		 {
-      			"purchase_id": "999999",
-      			"members_id": "javier.lobo@experian.com",
-      			"titulo_accion": "Titulo para el purchase 999999",
-      			"mensaje_accion": "menasje de la accion",
-      			"usuario_nuevo":  "Si",
-      			"purchase_to_product":{
-      				"product_id": "1",
-      				"productcode": "cuota",
-      				"name": "Cantidad aportada en concepto de cuotas",
-      				"isactive": "1"
-      			}
-    		  }
-    		]
-    	 }
-    	]
-    }
-  }'
-
-}
-
-function post_purchase_experian($purchase_id, $member_id, $product_id){
+function post_member_purchase_experian($member_id, $purchase_id, $product_id, $nombre, $apellidos, $email, $telefono, $pais_siglas, $pais_nombre, $nuevo){
 
 }
 
