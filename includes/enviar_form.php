@@ -135,24 +135,23 @@ if($_POST['guardar_form']) {
 				$product_id = get_product_by_productcode("pai_espana_may17")[0]["id"];
 				$member_id = get_member_by_email($email)[0]["id"];
 
-				// si no existe el member, lo creamos
+				// si no existe el member, lo creamos internamente
 				if(!isset($member_id)){
 						$member = post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre);
 						$member_id = $member['id'];
-						post_member_experian($member_id, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre);
 				}
-
-				echo $member_id." - ".$product_id;
+				// vemos si existe la purchase internamente
 				$purchase = get_purchase_by_member_product($product_id, $member_id);
 
-				// si no existe la compra, la creamos
+				// si no existe la purchase, la creamos en experian, junto con el member (crear o actualizar)
 				if($purchase["count"] == 0){
 						$purchase = post_purchase_ai($member_id, $product_id);
 						$purchase_id = $purchase["id"];
-						post_purchase_experian($purchase_id, $member_id, $product_id);
-				} else {
-					$purchase_id = $purchase["results"][0]["id"];
+						//post_member_purchase_experian($member_id, $purchase_id, $product_id, $nombre, $apellidos, $email, $telefono, $pais_siglas, $pais_nombre);
 				}
+				//else {
+					//$purchase_id = $purchase["results"][0]["id"];
+				//}
 		}
 
 		if($caso){
