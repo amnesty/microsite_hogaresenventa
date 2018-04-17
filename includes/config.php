@@ -39,7 +39,7 @@ define ("TRACK_WH_UTM", "?utm_source=whatsapp&utm_campaign=comp&utm_medium=socia
 
 //Para calcular el valor, es necesario sabnerl el nº de firmas que se llevan en cada momento, meidante una consulta SQL a la base de datos.
 //Luego se calucla esto: data-progress-percent =   (nº firmas / NUM_FIRMAS_TOTAL )*100
-define ("NUM_FIRMAS_TOTAL", "50000");
+define ("NUM_FIRMAS_TOTAL", "60000");
 
 
 /* Short URL Twitter */
