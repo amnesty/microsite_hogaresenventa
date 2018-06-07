@@ -1,4 +1,9 @@
 <?php
+?>
+		<link rel="stylesheet" href="js/magnific-popup/dist/magnific-popup.css">
+		<script type="text/javascript" src="js/magnific-popup/dist/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="js/politica.js"></script>
+<?php
   // Origenes
   $origen='';
   if ( isset($_GET['utm_content']) || isset($_GET['pk_campaign']) ){
@@ -52,6 +57,12 @@
 
 <form style="display: visible" id="<?=$id_formulario?>" action="includes/enviar_form.php" method="post" onsubmit="return validarFormFirma(document.forms['<?=$id_formulario?>']);">
     <div class="form-group">
+        <input type="text" class="form-control" name="email" placeholder="Email*">
+        <p class="error email">No has introducido este dato.</p>
+        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+    </div>
+
+    <div class="form-group">
         <input type="text" class="form-control" name="nombre" placeholder="Nombre*">
     <p class="error nombre">No has introducido este dato.</p>
     </div>
@@ -59,12 +70,6 @@
     <div class="form-group">
         <input type="text" class="form-control" name="apellidos" placeholder="Apellidos*">
         <p class="error apellidos">No has introducido este dato.</p>
-    </div>
-
-    <div class="form-group">
-        <input type="text" class="form-control" name="email" placeholder="Email*">
-        <p class="error email">No has introducido este dato.</p>
-        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
     </div>
 
     <div class="form-group">
@@ -181,14 +186,46 @@
         <p class="error pais">No has introducido este dato.</p>
     </div>
 
-    <div class="form-check">
+    <!--<div class="form-check">
         <label class="form-check-label">
            <input type="checkbox" class="form-check-input" name="politica">Deseo más información de Amnistía Internacional. <br /> Al participar aceptas la <a href="https://www.es.amnesty.org/politica-de-privacidad/" target="_blank">Política de Privacidad.</a>
         </label>
+    </div>-->
+
+    <div id="check_privacidad" style="display: none;">
+      <label class="form-check-label">
+        <input type="checkbox" id="check_reminder" checked="true" class="form-check-input" name="politica">
+        <span>Deseo más información de Amnistía Internacional.</span>
+      </label>
+    </div>
+    <div class="form-check clearfix">
+      <label class="form-check-label">
+        <span>Al participar aceptas la <a href="https://www.es.amnesty.org/politica-de-privacidad/" title="Política de Privacidad." target="_blank">Política de Privacidad.</a></span>
+      </label>
     </div>
 
-    <button id="btnEnviar_<?=$id_formulario?>" type="submit" class="btn btn-enviar orange-white">Envía tu firma</button>
+    <button id="btnEnviar_<?=$id_formulario?>" type="button" class="btn btn-enviar orange-white" onclick="validarFormFirma(document.forms['formFirma']);">Envía tu firma</button>
     <button id="btnEnviando_<?=$id_formulario?>" type="button" class="btn btn-enviar" style="display:none;">Enviando...</button>
+
+    <!-- TEST POPUP -->
+    <!--<button id="btnTestEnviar" type="button">Button - Submit Envía tu firma</button>-->
+    <!--<a href="#test-popup" class="open-popup-link">Show inline popup</a>-->
+    <div id="test-popup" class="modal-dialog mfp-hide white-popup mfp-hide" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Si quieres recibir otras acciones como esta e información adicional de Amnistía Internacional, recuerda marcar la casilla verde antes de enviar tu firma</p>
+          </div>
+          <div class="modal-footer">
+            <!--<form class="ai-accion-firma__form" >-->
+                <label class="ai-accion-firma__check bigger">
+                    <input type="checkbox" id="ai-accion-firma__masinfo_reminder" class="form-check-input"/>
+                    Quiero recibir acciones para cambiar el mundo
+                </label>
+            <!--</form>-->
+          </div>
+        </div>
+    </div>
+    <!--END TEST POPUP -->
 
     <input type="hidden" name="guardar_form" value="1">
     <input type="hidden" name="origen" value="<?php echo($origen); ?>">

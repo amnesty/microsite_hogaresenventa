@@ -299,9 +299,50 @@ function validarFormFirma(f) {
         return false;
     }else{
 
+      var check = $("#check_reminder");
+      var check_reminder_modal = $('#ai-accion-firma__masinfo_reminder');
+
+      if(!check.prop("checked") && check_reminder_modal.length > 0 && check_reminder_modal.data("shown") != 1) { // in case that exist an reminder_modal div
+              $.magnificPopup.open({
+                  items: {
+                      src: '#test-popup'
+
+                  },
+                  removalDelay: 50,
+                  callbacks: {
+                    open: function() {
+                      var popup = this;
+                      var input = popup.currItem.inlineElement.find("input");
+                      var check = $("#ai-accion-firma__masinfo");
+                      input.prop("checked", false);
+                      check.prop("checked", false);
+                      $('#test-popup').data("shown", 1);
+                      _paq.push(["trackEvent", "popup_check", "mostrado"]);
+
+                      input.change(function(){
+                          var check = $("#ai-accion-firma__masinfo");
+                          check.prop("checked", true);
+                          $("#check_reminder").prop("checked", true);
+                          //$('#formFirma').submit();
+                          document.getElementById("formFirma").submit();
+                      });
+                    },
+                    beforeClose: function(){
+                          //f.submit();
+                          //$('#formFirma').submit();
+                          document.getElementById("formFirma").submit();
+                    }
+                  },
+                  midClick: true
+              });
+              event.stopImmediatePropagation();
+              return false;
+      }
+
         $('#btnEnviar_'+id_form).css('display', 'none');
         $('#btnEnviando_'+id_form).css('display', 'block');
-
+        //$('#formFirma').submit();
+        document.getElementById("formFirma").submit();
         return true;
     }
 }

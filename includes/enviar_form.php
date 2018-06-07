@@ -30,9 +30,11 @@ if($_POST['guardar_form']) {
 	// Política
 	if($politika == 'on'){
 		$masinfo = 1;
+		$no_fundraising = 0;
 	}
 	else {
 		$masinfo = 0;
+		$no_fundraising = 1;
 	}
 	// País
 	$query_pais = "SELECT ISO_Country_es AS nombre, IdWeb AS siglas FROM correos.countries WHERE IdMailSolutions=".$pais_id;
@@ -52,6 +54,13 @@ if($_POST['guardar_form']) {
 
 		//nuev@s interesad@s
 		$socio = es_interesado($email);
+
+		// 0 = interesado, 1 = socio
+		$estado = 'interesado_a';
+		if ($socio == 1)
+		{
+				$estado = 'socio_a';
+		}
 
 		if(!isset($existe)) {
 
@@ -124,22 +133,21 @@ if($_POST['guardar_form']) {
 				$dummy = mysqli_query( $id_connect, $query ); //or die( 'Error: ' . mysqli_connect_errno() );
 				mysqli_close($id_connect);
 
-				// fichero texto
-				/*$now = date("Y-m-d h:i:sa");
-				$txt = $nombre."\t".$apellidos."\t".$email."\t".$telefono."\t".$pais_def."\t".$masinfo."\t".$origen.":".$campanya."\t".$ip."\t".$socio."\t".$now."\t".$user_agent."\n";
-				$myfile = fopen("file.txt", "a");
-				fwrite($myfile, $txt);
-				fclose($myfile);*/
-
 				//$token = get_token();
 				$product_id = get_product_by_productcode("pai_espana_may17")[0]["id"];
 				$member_id = get_member_by_email($email)[0]["id"];
 
 				// si no existe el member, lo creamos internamente
 				if(!isset($member_id)){
-						$member = post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre);
+						$member = post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre, $estado, $no_fundraising);
 						$member_id = $member['id'];
-				}
+						//insertamos el member en la plaforma de envio de correos
+						post_member_experian($member_id, $nombre, $apellidos, $email, $telefono, $pais_siglas, $pais_nombre, $estado, $no_fundraising);
+					}else{
+						// Si existe actualizamos el campo no_fundraising siempre y cuando acepte recibir información (no_fundraising = 0)
+						put_member_ai($member_id, $email, $no_fundraising); // API interna
+						put_member_experian($members_id, $email, $no_fundraising); // API Experian
+					}
 				// vemos si existe la purchase internamente
 				$purchase = get_purchase_by_member_product($product_id, $member_id);
 
