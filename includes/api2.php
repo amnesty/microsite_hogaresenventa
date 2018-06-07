@@ -51,6 +51,31 @@ function ai_curl_post($url, $data){
     return json_decode($response, true);
 }
 
+function ai_curl_put($url, $data){
+
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "PUT",
+        CURLOPT_POSTFIELDS => $data,
+        CURLOPT_HTTPHEADER => array(
+          "cache-control: no-cache",
+          "content-type: application/json",
+          'Authorization: '.TOKEN.''
+        ),
+    ));
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+    curl_close($curl);
+
+    return json_decode($response, true);
+}
+
 function do_curl($url, $method, $headers, $postText){
 
     $curl = curl_init();
@@ -116,7 +141,7 @@ function es_interesado($email) {
     // 0 = interesado, 1 = socio, 2 = nuevo
     $essocio = 2;
     if( isset($member["id"]) ){
-      if($member["properties"][2]["value"] > 0){
+      if($member["crm_id"] > 0){
         $essocio = 1;
       } else {
         $essocio = 0;
@@ -146,7 +171,7 @@ function get_purchase_by_member_product($product_id, $member_id){
     $url = "http://".IP.":".PORT."/api/purchases/?product_id=".$product_id."&member_id=".$member_id;
     echo $url;
     $res = ai_curl($url);
-    var_dump($res);
+    //var_dump($res);
     return $res["results"];
 }
 
@@ -157,7 +182,7 @@ function get_fecha(){
 
 /************************* POSTs *************************/
 
-function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre){
+function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $pais_nombre, $estado = null, $no_fundraising = null){
 
     $data = '{
         "firstname": "'.$nombre.'",
@@ -181,7 +206,10 @@ function post_member_ai($email, $nombre, $apellidos, $telefono, $pais_siglas, $p
         "crm_id": 0,
         "source": "",
         "segment": "3",
-        "synchro_update" : "'.get_fecha().'"
+        "estado": "'.$estado.'",
+        "synchro_insert" : "'.get_fecha().'",
+        "synchro_update" : "'.get_fecha().'",
+        "no_fundraising": "'.$no_fundraising.'"
      }';
 
     $url = "http://".IP.":".PORT."/api/members/";
@@ -207,8 +235,198 @@ function post_purchase_ai($member_id, $product_id) {
     return $res;
 }
 
-function post_member_purchase_experian($member_id, $purchase_id, $product_id, $nombre, $apellidos, $email, $telefono, $pais_siglas, $pais_nombre, $nuevo){
+function post_member_experian($members_id, $firstname, $lastname, $email, $telefono, $pais_siglas, $pais_nombre, $estado = null, $no_fundraising = null){
 
+  // Token
+  $token = get_token();
+
+  // Header
+  $headers = array(
+    "Authorization: Bearer ".$token,
+    "content-type: application/json",);
+
+    $url = "https://api.ccmp.eu/services2/api/Recipients/";
+
+    date_default_timezone_set('Europe/Madrid');
+    $now = date("m/d/Y H:i:s");
+
+    $postText = '{
+      "apiPostId": "23",
+      "data": [
+        {
+          "name":"members_id",
+          "value":"'.$members_id.'"
+        },
+        {
+          "name": "firstname",
+          "value": "'.$firstname.'"
+        },
+        {
+          "name": "lastname2",
+          "value": "'.$lastname.'"
+        },
+        {
+          "name": "email",
+          "value": "'.$email.'"
+        },
+        {
+          "name":"mobile_sp1_status_id",
+          "value":"100"
+        },
+        {
+          "name":"email_sp2_status_id",
+          "value":"100"
+        },
+        {
+          "name": "mobile",
+          "value": "'.$telefono.'"
+        },
+        {
+          "name": "country_id",
+          "value": "'.$pais_siglas.'"
+        },
+        {
+          "name": "country",
+          "value": "'.$pais_nombre.'"
+        },
+        {
+          "name":"datejoin",
+          "value":"'.$now.'"
+        },
+        {
+          "name":"synchro_update",
+          "value":"'.$now.'"
+        },
+        {
+          "name":"estado",
+          "value":"'.$estado.'"
+        },
+        {
+          "name":"no_fundraising",
+          "value":"'.$no_fundraising.'"
+        }]
+      }';
+
+      $res = do_curl($url,"POST",$headers,$postText);
+      return $res["result"];
+
+}
+
+
+function post_member_purchase_experian($purchase_id, $product_id, $member_id, $email){
+
+  // Token
+  $token = get_token();
+  // Header
+  $headers = array(
+    "Authorization: Bearer ".$token,
+    "content-type: application/json",);
+
+    $url = "https://api.ccmp.eu/services2/api/Recipients/";
+
+    date_default_timezone_set('Europe/Madrid');
+    $now = date("Y-m-d H:i:s");
+
+    $postText = '{
+      "apiPostId": "26",
+      "data": [
+        {
+          "name":"purchase_id",
+          "value":"'.$purchase_id.'"
+        },
+        {
+          "name":"members_id",
+          "value": "'.$member_id.'"
+        },
+        {
+          "name":"product_id",
+          "value": "'.$product_id.'"
+        },
+        {
+          "name":"date",
+          "value":"'.$now.'"
+        },
+        {
+          "name":"amountpaid",
+          "value":"0"
+        },
+        {
+          "name":"type",
+          "value":"2"
+        },
+        {
+          "name":"Status",
+          "value":"A"
+        },
+        {
+          "name":"countitems",
+          "value":"1"
+        },
+        {
+          "name":"source",
+          "value":"'.$email.'"
+        }
+      ]
+    }';
+    $res = do_curl($url,"POST",$headers,$postText);
+    //echo $purchase_id."-".$product_id."-".$member_id;
+    return $res["result"];
+
+}
+
+/************************* PUTs *************************/
+function put_member_ai($member_id, $email, $no_fundraising){
+
+    $data = '{
+        "email": "'.$email.'",
+        "datejoin": "'.get_member_by_email($email)[0]["datejoin"].'",
+        "synchro_update" : "'.get_fecha().'",
+        "no_fundraising": "'.$no_fundraising.'"
+     }';
+
+    $url = "http://".IP.":".PORT."/api/members/".$member_id."/";
+    $res = ai_curl_put($url, $data);
+    return $res;
+}
+
+function put_member_experian($members_id, $email, $no_fundraising){
+
+  // Token
+  $token = get_token();
+
+  // Header
+  $headers = array(
+    "Authorization: Bearer ".$token,
+    "content-type: application/json",);
+
+    $url = "https://api.ccmp.eu/services2/api/Recipients/";
+
+    date_default_timezone_set('Europe/Madrid');
+    $now = date("m/d/Y H:i:s");
+
+    $postText = '{
+      "apiPostId": "24",
+      "data": [
+        {
+          "name":"members_id",
+          "value":"'.$members_id.'"
+        },
+        {
+          "name": "email",
+          "value": "'.$email.'"
+        },
+        {
+          "name":"synchro_update",
+          "value":"'.$now.'"
+        },
+        {
+          "name":"no_fundraising",
+          "value":"'.$no_fundraising.'"
+        }]
+      }';
+
+      $res = do_curl($url,"POST",$headers,$postText);
+      return $res["result"];
 }
 
 ?>

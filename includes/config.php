@@ -7,6 +7,8 @@ ini_set('display_startup_errors', 0);
 /***********************
 *     CONSTANTES       *
 ***********************/
+//echo 'test'.$_SERVER['SERVER_NAME'];
+//exit;
 
 //ESTABLECE LA URL DEL SITE para construir las URLs y usarlas en Redes Sociales y Meta Etiquetas
 if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
@@ -16,8 +18,8 @@ if ( strpos ( $_SERVER['SERVER_NAME'], "amnistia.bit" )) {
 	define("URL_SITE",     "http://testing.estresarte.com/amnistia/hogaresenventa/"); // Producción estrés
 	$table = ""; // definir tabla de prueba para simular el insert
 } elseif ( $_SERVER['SERVER_NAME'] == "localhost" ) {
-	define("URL_SITE",     "http://localhost:8088/hogaresenventa/"); // Local amnistia
-	$tabla = "test_firmas";
+	define("URL_SITE",     "http://localhost:8080/hogaresenventa/"); // Local amnistia
+	$tabla = "firmas";
 } else {
 	define("URL_SITE",     "https://www.es.amnesty.org/hogaresenventa/"); // Producción Amnistía
 	$tabla = "firmas";

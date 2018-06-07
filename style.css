@@ -643,8 +643,10 @@ form .error{
     visibility: hidden;
 }
 
-form .form-check-input {
+.form-check-input {
     margin-top: 6px;
+    outline: 3px solid #292;
+    margin-right: 2%;
 }
 
 form .form-check{
@@ -1100,6 +1102,20 @@ footer .links li{
 
 }
 
+.modal-dialog{
+  border-radius: .25em;
+}
+.white-popup{
+  max-width: 768px !important;
+}
+.modal-content{
+  border: 0px;
+}
+.ai-accion-firma__check{
+  display: flex;
+  margin-left: 7%;
+}
 
-
-
+#check_privacidad{
+  font-size: 14px;
+}
