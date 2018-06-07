@@ -146,7 +146,7 @@ if($_POST['guardar_form']) {
 					}else{
 						// Si existe actualizamos el campo no_fundraising siempre y cuando acepte recibir información (no_fundraising = 0)
 						put_member_ai($member_id, $email, $no_fundraising); // API interna
-						put_member_experian($members_id, $email, $no_fundraising); // API Experian
+						$put = put_member_experian($member_id, $email, $no_fundraising); // API Experian
 					}
 				// vemos si existe la purchase internamente
 				$purchase = get_purchase_by_member_product($product_id, $member_id);
