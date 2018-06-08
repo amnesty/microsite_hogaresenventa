@@ -143,7 +143,6 @@ if($isMobile) {
 
 						<div class="formulario-general mobile">
 							<h1>El Derecho a la vivienda #NoSeVende</h1>
-
 <!-- Se quita el formulario y se incluye texto de cierre 8-6-18-->
 <p>Esta acción ha finalizado. Gracias a las 50 mil personas que han participado en ella.</p>
 
