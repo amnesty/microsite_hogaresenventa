@@ -153,11 +153,6 @@ if($isMobile) {
 
 <!--
 							<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
-<?php
-	$caso = 'lucia';
-	$id_formulario = "formFirmaMobile";
-	include ('includes/form-firma.php');
-?>
 -->
 						</div>
 
