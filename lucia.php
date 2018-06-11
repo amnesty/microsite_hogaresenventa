@@ -180,20 +180,13 @@ if($isMobile) {
 					</div>
 				</div>
 
-				<!--div class="content-text right col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="content-text right col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row">
 
 						<div class="col-12">
 
 							<div class="formulario-general desktop">
 								<h1>El Derecho a la vivienda #NoSeVende</h1>
-<<<<<<< HEAD
-								<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
-<?php
-	//$id_formulario = "formFirma";
-	//include ('includes/form-firma.php');
-?>
-=======
 
 <!-- Se quita el formulario y se incluye texto de cierre 8-6-18-->
 <p>Esta acción ha finalizado. Gracias a las 50 mil personas que han participado en ella.</p>
@@ -203,8 +196,6 @@ if($isMobile) {
 <p>Amnistía Internacional seguirá trabajando para que las personas afectadas por la venta de vivienda social de la Comunidad y Ayuntamiento de Madrid mantengan la protección de su derecho a la vivienda. </p>
 
 <!-- 								<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
--->
->>>>>>> deddf72433e96297c5cb7051ec892418597550dd
 							</div>
 						</div>
 
