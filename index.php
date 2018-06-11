@@ -280,9 +280,11 @@ if($isMobile) {
 
 
 	<!-- Botón firma Mobile  -->
+<!--
 	<div class="boton-fixed-firma">
 		<a data-e_c="hogaresenventa" data-e_a="home boton footer firma" data-e_l="home boton footer firma" class="btn-big-general firma send-piwik-event" href="#"><b>Firma</b></a>
 	</div>
+-->
 
 	<!-- Footer -->
 

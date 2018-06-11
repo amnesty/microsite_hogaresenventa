@@ -187,11 +187,24 @@ if($isMobile) {
 
 							<div class="formulario-general desktop">
 								<h1>El Derecho a la vivienda #NoSeVende</h1>
+<<<<<<< HEAD
 								<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 <?php
 	//$id_formulario = "formFirma";
 	//include ('includes/form-firma.php');
 ?>
+=======
+
+<!-- Se quita el formulario y se incluye texto de cierre 8-6-18-->
+<p>Esta acción ha finalizado. Gracias a las 50 mil personas que han participado en ella.</p>
+
+<p>El 25 de mayo de 2018 el Juzgado de lo Contencioso-Administrativo nº29 de Madrid anuló la venta de vivienda pública de la Comunidad de Madrid a Azora Gestión. La sentencia aduce que la venta se produjo sin un estudio sobre el impacto social que la misma tendría en numerosas familias en situación de vulnerabilidad económica y detalla que el antiguo IVIMA no justificó por qué casi 3.000 viviendas sociales "no eran necesarias" cuando estas cumplen una función social, como la de garantizar el acceso a una vivienda digna a las personas en situación d mayor vulnerabilidad. También se detalla que no consta en el expediente de venta de las viviendas ningún informe que explique cómo esta venta puede servir a los fines del IVIMA, siendo el más importante de estos el proporcionar el acceso a una vivienda digna. En conclusión, la Sentencia anula y deja sin efecto la venta de las casi 3.000 viviendas del IVIMA al fondo de inversión Azora Gestión.</p>
+
+<p>Amnistía Internacional seguirá trabajando para que las personas afectadas por la venta de vivienda social de la Comunidad y Ayuntamiento de Madrid mantengan la protección de su derecho a la vivienda. </p>
+
+<!-- 								<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
+-->
+>>>>>>> deddf72433e96297c5cb7051ec892418597550dd
 							</div>
 						</div>
 
