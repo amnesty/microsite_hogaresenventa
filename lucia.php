@@ -180,7 +180,7 @@ if($isMobile) {
 					</div>
 				</div>
 
-				<div class="content-text right col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<!--div class="content-text right col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row">
 
 						<div class="col-12">
@@ -189,14 +189,14 @@ if($isMobile) {
 								<h1>El Derecho a la vivienda #NoSeVende</h1>
 								<p>Firma <a data-e_c="hogaresenventa" data-e_a="lucía petición" data-e_l="lucía petición" href="#" title="esta petición" data-toggle="modal" data-target="#modal-peticion" class="send-piwik-event"><b>esta petición</b></a> al Ayuntamiento y a la Comunidad de Madrid para que protejan a las personas afectadas por la venta de viviendas sociales.</p>
 <?php
-	$id_formulario = "formFirma";
-	include ('includes/form-firma.php');
+	//$id_formulario = "formFirma";
+	//include ('includes/form-firma.php');
 ?>
 							</div>
 						</div>
 
 					</div>
-				</div>
+				</div-->
 			</div><!-- /row -->
 		</div>
 
